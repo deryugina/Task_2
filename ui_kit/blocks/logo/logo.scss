@@ -1,0 +1,18 @@
+.logo {
+	width: 48px;
+	height: 48px;
+}
+
+.position-logo {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+.position-figures {
+	position: absolute;
+}
+
+@import './__circle/logo__circle.scss';
+@import './__line-1/logo__line-1.scss';
+@import './__line-2/logo__line-2.scss';
