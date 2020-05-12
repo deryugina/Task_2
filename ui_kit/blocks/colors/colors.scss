@@ -5,6 +5,7 @@
 }
 
 @import './__color-item/colors__color-item.scss';
+@import './__text-item/colors__text-item.scss';
 
 .color {
 	position: absolute;
@@ -48,19 +49,69 @@
 
 }
 
-.text {
-	display: flex;
+.text-position {
 	position: absolute;
 	left: 260px;
+	align-items: center;
+}
+
+.text-mix {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 19px;
 	line-height: 29px;
 	font-style: normal;
-	font-weight: bold;
-	align-items: center;
 }
 
-.colors__text-item_color-1 {
+.colors__color-title {
+	font-weight: bold;
+}
+
+.colors__color-code {
+	font-weight: normal;
+}
+
+.colors__text-item_text-1 {
 	width: 159px;
+	height: 57px;
 	top: 152px;
+}
+
+.colors__text-item_text-2 {
+	width: 150px;
+	height: 57px;
+	top: 242px;
+}
+
+.colors__text-item_text-3 {
+	width: 151px;
+	height: 57px;
+	top: 332px;
+}
+
+.colors__text-item_text-4 {
+	width: 149px;
+	height: 57px;
+	top: 422px;
+}
+
+.colors__text-item_text-5 {
+	width: 139px;
+	height: 58px;
+	top: 511px;
+}
+
+.colors__text-item_text-6 {
+	width: 82px;
+	height: 58px;
+	top: 601px;
+}
+
+.colors__text-item_text-7 {
+	width: 77px;
+	height: 57px;
+	top: 692px;
+}
+
+.colors__text-item_no-bold {
+	font-weight: normal;
 }
