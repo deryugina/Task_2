@@ -44,50 +44,93 @@
   height: 70px;
   border-radius: 6px; }
 
-.colors__color-item_color-1 {
+.colors__text-item {
+  display: flex;
+  color: #1F2041; }
+
+.color {
   position: absolute;
+  left: 150px; }
+
+.colors__color-item_color-1 {
   top: 145px;
-  left: 150px;
   background: #1F2041; }
 
 .colors__color-item_color-2 {
-  position: absolute;
   top: 235px;
-  left: 150px;
   background: rgba(31, 32, 65, 0.75); }
 
 .colors__color-item_color-3 {
-  position: absolute;
   top: 325px;
-  left: 150px;
   background: rgba(31, 32, 65, 0.5); }
 
 .colors__color-item_color-4 {
-  position: absolute;
   top: 415px;
-  left: 150px;
   background: rgba(31, 32, 65, 0.25); }
 
 .colors__color-item_color-5 {
-  position: absolute;
   top: 505px;
-  left: 150px;
   background: rgba(31, 32, 65, 0.05); }
 
 .colors__color-item_color-6 {
-  position: absolute;
   top: 595px;
-  left: 150px;
   background: #BC9CFF; }
 
 .colors__color-item_color-7 {
-  position: absolute;
   top: 685px;
-  left: 150px;
   background: #6FCF97; }
 
-.colors__text-item_color-1 {
-  width: 159px;
+.text-position {
   position: absolute;
-  top: 152px;
-  left: 260px; }
+  left: 260px;
+  align-items: center; }
+
+.text-mix {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 19px;
+  line-height: 29px;
+  font-style: normal; }
+
+.colors__color-title {
+  font-weight: bold; }
+
+.colors__color-code {
+  font-weight: normal; }
+
+.colors__text-item_text-1 {
+  width: 159px;
+  height: 57px;
+  top: 152px; }
+
+.colors__text-item_text-2 {
+  width: 150px;
+  height: 57px;
+  top: 242px; }
+
+.colors__text-item_text-3 {
+  width: 151px;
+  height: 57px;
+  top: 332px; }
+
+.colors__text-item_text-4 {
+  width: 149px;
+  height: 57px;
+  top: 422px; }
+
+.colors__text-item_text-5 {
+  width: 139px;
+  height: 58px;
+  top: 511px; }
+
+.colors__text-item_text-6 {
+  width: 82px;
+  height: 58px;
+  top: 601px; }
+
+.colors__text-item_text-7 {
+  width: 77px;
+  height: 57px;
+  top: 692px; }
+
+.colors__text-item_no-bold {
+  font-weight: normal; }
