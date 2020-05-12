@@ -1,0 +1,57 @@
+.colors {
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+
+.colors__color-item {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px; }
+
+.colors__color-item_color-1 {
+  position: absolute;
+  top: 145px;
+  left: 150px;
+  background: #1F2041; }
+
+.colors__color-item_color-2 {
+  position: absolute;
+  top: 235px;
+  left: 150px;
+  background: rgba(31, 32, 65, 0.75); }
+
+.colors__color-item_color-3 {
+  position: absolute;
+  top: 325px;
+  left: 150px;
+  background: rgba(31, 32, 65, 0.5); }
+
+.colors__color-item_color-4 {
+  position: absolute;
+  top: 415px;
+  left: 150px;
+  background: rgba(31, 32, 65, 0.25); }
+
+.colors__color-item_color-5 {
+  position: absolute;
+  top: 505px;
+  left: 150px;
+  background: rgba(31, 32, 65, 0.05); }
+
+.colors__color-item_color-6 {
+  position: absolute;
+  top: 595px;
+  left: 150px;
+  background: #BC9CFF; }
+
+.colors__color-item_color-7 {
+  position: absolute;
+  top: 685px;
+  left: 150px;
+  background: #6FCF97; }
+
+.colors__text-item_color-1 {
+  width: 159px;
+  position: absolute;
+  top: 152px;
+  left: 260px; }

@@ -1,0 +1,66 @@
+.colors {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+@import './__color-item/colors__color-item.scss';
+
+.color {
+	position: absolute;
+	left: 150px;
+}
+
+.colors__color-item_color-1 {
+	top: 145px;
+	background: #1F2041;
+}
+
+.colors__color-item_color-2 {
+	top: 235px;
+	background: rgba(31, 32, 65, 0.75);
+}
+
+.colors__color-item_color-3 {
+	top: 325px;
+	background: rgba(31, 32, 65, 0.5);
+}
+
+.colors__color-item_color-4 {
+	top: 415px;
+	background: rgba(31, 32, 65, 0.25);
+}
+
+.colors__color-item_color-5 {
+	top: 505px;
+	background: rgba(31, 32, 65, 0.05);
+}
+
+.colors__color-item_color-6 {
+	top: 595px;
+	background: #BC9CFF;
+
+}
+
+.colors__color-item_color-7 {
+	top: 685px;
+	background: #6FCF97;
+
+}
+
+.text {
+	display: flex;
+	position: absolute;
+	left: 260px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 19px;
+	line-height: 29px;
+	font-style: normal;
+	font-weight: bold;
+	align-items: center;
+}
+
+.colors__text-item_color-1 {
+	width: 159px;
+	top: 152px;
+}
