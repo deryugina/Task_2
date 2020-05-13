@@ -1,4 +1,6 @@
 .colors__text-item {
 	display: flex;
+	flex-direction: column;
+	/*align-items: center;*/
 	color: #1F2041;
 }
