@@ -1,0 +1,17 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: calc(403 / 1440 * 100%);
+  height: calc(321 / 900 * 100%);
+  max-width: 403px; /*the width of this block in layout*/
+  max-height: 321px; /*the height of this block in layout*/
+  margin-top: calc(145 / 900 * 100%);
+  margin-left: calc(846 / 1440 * 100%);
+  /*margin-top: 16%;
+  margin-left: 58.75%;
+  width: 28%;
+  height: 35.7%;*/
+}
+
+@import './tag/tag.scss';
