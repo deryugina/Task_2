@@ -21,7 +21,6 @@
   flex-wrap: wrap;//?
   flex: 0 0 calc(159 / 269.26 * 100%);
   //min-width: ; INPUT IT
-  //height: 57px;
   height: 100%;
   //max-width: ; INPUT IT
   align-items: center;
@@ -33,11 +32,16 @@
 }
 
 .color-description__color-name {
-  width: 100%;
+  //width: 100%;
+  width: 159px;
+  //max-width: 159px;
+  flex: 0 1 100%;
+  max-width: 100%;
   font-weight: bold;
 }
 
 .color-description__color-hex {
+  flex: 0 0 100%;
 }
 
 //.color-block__color-square_color_dark-100 {
