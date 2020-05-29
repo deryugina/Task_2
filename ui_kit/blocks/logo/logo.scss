@@ -1,11 +1,17 @@
 .logo {
-	//min-width: calc(48 / 108 * 100%);
-	//min-height: calc(48 / 108 * 100%);
   margin: auto;
 }
 
-.logo-wrapper {
-  display: flex;
-  width: calc(108 / 1440 * 100%);
-  height: calc(108 / 900 * 100%);
-}
+//.logo-wrapper {
+//  display: flex;
+//  width: calc(108 / 1440 * 100%);
+//  height: calc(108 / 900 * 100%);
+//}
+
+//the second way to center logo-block:
+//
+//.logo-wrapper {
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//}
