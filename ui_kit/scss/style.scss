@@ -11,9 +11,9 @@
 @font-face {
 	font-family: 'Quicksand';
 	src: url('../fonts/Quicksand-bold/quicksand-bold.eot');
-	src: local('☺'), url('../fonts/Quicksand/quicksand-bold.woff') format('woff'), 
-	url('../fonts/Quicksand/quicksand-bold.ttf') format('truetype'), 
-  url('../fonts/Quicksand/quicksand-bold.svg') format('svg');
+	src: local('☺'), url('../fonts/Quicksand-bold/quicksand-bold.woff') format('woff'), 
+	url('../fonts/Quicksand-bold/quicksand-bold.ttf') format('truetype'), 
+  url('../fonts/Quicksand-bold/quicksand-bold.svg') format('svg');
 	font-weight: bold;
 	font-style: normal;
 }
@@ -45,6 +45,30 @@
 	border: 1px solid black;
 }
 
+.colors-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: calc(269.26 / 1440 * 100%);
+  height: calc(610 / 900 * 100%);
+  //margin-top: calc(37 / 900 * 100%);
+  margin-top: 145px;
+  margin-left: calc(41.74 / 1440 * 100%);
+}
+
+.tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  //width: calc(403 / 1440 * 100%);
+  //height: calc(321 / 900 * 100%);
+  width: 403px;
+  height: 321px;
+  //min/max-width. INPUT IT
+  margin-top: 145px;
+  margin-left: 437px;
+}
+
 @import '../blocks/logo/logo.scss';
-@import '../blocks/colors/colors.scss';
-@import '../blocks/tags/tags.scss';
+@import '../blocks/colors/color.scss';
+@import '../blocks/tags/tag.scss';

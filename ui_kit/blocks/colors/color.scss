@@ -1,0 +1,68 @@
+.color-block {
+  flex: 0 0 100%;
+  height: calc(70 / 610 * 100%);
+  display: flex;
+  justify-content: space-between;
+  //max-width: ; INPUT IT IN PX
+  //min-width: ; INPUT IT IN PX
+}
+
+.color-block__color-square {
+  flex: 0 0 calc(70 / 269.26 * 100%);
+  //min-width: ; INPUT IT
+  //max-width: ; INPUT IT
+  height: 100%;
+  border-radius: 6px;
+  background-color: #1F2041;
+}
+
+.color-description {
+  display: flex;
+  flex-wrap: wrap;//?
+  flex: 0 0 calc(159 / 269.26 * 100%);
+  //min-width: ; INPUT IT
+  //height: 57px;
+  height: 100%;
+  //max-width: ; INPUT IT
+  align-items: center;
+  font-family: 'Quicksand';
+  font-size: 19px;
+  line-height: 29px;
+  font-style: normal;
+  font-weight: normal;;
+}
+
+.color-description__color-name {
+  width: 100%;
+  font-weight: bold;
+}
+
+.color-description__color-hex {
+}
+
+//.color-block__color-square_color_dark-100 {
+//}
+
+.color-block__color-square_color_dark-75 {
+  background-color: rgba(31, 32, 65, 0.75);
+}
+
+.color-block__color-square_color_dark-50 {
+  background-color: rgba(31, 32, 65, 0.50);
+}
+
+.color-block__color-square_color_dark-25 {
+  background-color: rgba(31, 32, 65, 0.25);
+}
+
+.color-block__color-square_color_dark-5 {
+  background-color: rgba(31, 32, 65, 0.05);
+}
+
+.color-block__color-square_color_purple {
+  background-color: #BC9CFF;
+}
+
+.color-block__color-square_color_green {
+  background-color: #6FCF97;
+}

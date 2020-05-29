@@ -1,0 +1,16 @@
+mixin color-block(options)
+  -var blockColor = "color-block"
+  -var elemColorSquare  = "color-block__color-square"
+  //-var elemColorDescription = "color-block__color-description"
+  -var blockColorDescription = "color-description"
+  -var elemColorName = "color-description__color-name"
+  -var elemColorHex = "color-description__color-hex"
+
+  if options.color
+    -elemColorSquare += " color-block__color-square_color_" + options.color
+
+  div(class=blockColor)
+    span(class=elemColorSquare)
+    span(class=blockColorDescription)
+      span(class=elemColorName)= options.colorName
+      span(class=elemColorHex)= options.colorHex

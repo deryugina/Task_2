@@ -6,10 +6,29 @@ html(lang="en")
     title= "Task-2 UI-kit"
   body
     div.colors-and-type
-      include ../blocks/logo/logo.pug
-      include ../blocks/colors/colors.pug
-      include ../blocks/tags/tags.pug
+      div.logo-wrapper
+        include ../blocks/logo/logo.svg
 
+      div.colors-wrapper
+        include ../blocks/colors/color.pug
+
+        +color-block({color: 'dark-100', colorName: 'Dark Shade 100%', colorHex: '#1F2041'})
+        +color-block({color: 'dark-75', colorName: 'Dark Shade 75%', colorHex: '#1F2041'})
+        +color-block({color: 'dark-50', colorName: 'Dark Shade 50%', colorHex: '#1F2041'})
+        +color-block({color: 'dark-25', colorName: 'Dark Shade 25%', colorHex: '#1F2041'})
+        +color-block({color: 'dark-5', colorName: 'Dark Shade 5%', colorHex: '#1F2041'})
+        +color-block({color: 'purple', colorName: 'Purple', colorHex: '#BC9CFF'})
+        +color-block({color: 'green', colorName: 'Green', colorHex: '#6FCF97'})
+
+      div.tags-wrapper
+        include ../blocks/tags/tag.pug
+
+        +tag({ tagName: 'h1', tagDescription: 'This one is the sub-section or widget title', size: 'size-h1', font: 'quicksand'})
+
+        +tag({ tagName: 'h2', tagDescription: 'Next one is the item title inside widgets', size: 'size-h2', font: 'quicksand'})
+        +tag({ tagName: 'h3', tagDescription: 'this is a label or cta text', size: 'size-h3', weight: 'bold'})
+
+        +tag({ tagName: 'Body', tagDescription: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', size: 'size-body', opacity: 'high', transform: 'none'})
       //+tag('h1', 'This one is the sub-section or widget title')
       //+tag('h2', 'Next one is the item title inside widgets')
       //+tag('h3', 'this is a label or cta text')

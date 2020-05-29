@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'Quicksand';
   src: url("../fonts/Quicksand-bold/quicksand-bold.eot");
-  src: local("☺"), url("../fonts/Quicksand/quicksand-bold.woff") format("woff"), url("../fonts/Quicksand/quicksand-bold.ttf") format("truetype"), url("../fonts/Quicksand/quicksand-bold.svg") format("svg");
+  src: local("☺"), url("../fonts/Quicksand-bold/quicksand-bold.woff") format("woff"), url("../fonts/Quicksand-bold/quicksand-bold.ttf") format("truetype"), url("../fonts/Quicksand-bold/quicksand-bold.svg") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -33,6 +33,24 @@
   display: flex;
   border: 1px solid black; }
 
+.colors-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: calc(269.26 / 1440 * 100%);
+  height: calc(610 / 900 * 100%);
+  margin-top: 145px;
+  margin-left: calc(41.74 / 1440 * 100%); }
+
+.tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 403px;
+  height: 321px;
+  margin-top: 145px;
+  margin-left: 437px; }
+
 .logo {
   margin: auto; }
 
@@ -41,124 +59,51 @@
   width: calc(108 / 1440 * 100%);
   height: calc(108 / 900 * 100%); }
 
-.colors {
-  position: absolute;
-  top: 0px;
-  left: 0px; }
-
-.colors__color-item {
-  width: 70px;
-  height: 70px;
-  border-radius: 6px; }
-
-.colors__text-item {
+.color-block {
+  flex: 0 0 100%;
+  height: calc(70 / 610 * 100%);
   display: flex;
-  flex-direction: column;
-  /*align-items: center;*/
-  color: #1F2041; }
+  justify-content: space-between; }
 
-.color {
-  position: absolute;
-  left: 150px; }
+.color-block__color-square {
+  flex: 0 0 calc(70 / 269.26 * 100%);
+  height: 100%;
+  border-radius: 6px;
+  background-color: #1F2041; }
 
-.colors__color-item_color-1 {
-  top: 145px;
-  background: #1F2041; }
-
-.colors__color-item_color-2 {
-  top: 235px;
-  background: rgba(31, 32, 65, 0.75); }
-
-.colors__color-item_color-3 {
-  top: 325px;
-  background: rgba(31, 32, 65, 0.5); }
-
-.colors__color-item_color-4 {
-  top: 415px;
-  background: rgba(31, 32, 65, 0.25); }
-
-.colors__color-item_color-5 {
-  top: 505px;
-  background: rgba(31, 32, 65, 0.05); }
-
-.colors__color-item_color-6 {
-  top: 595px;
-  background: #BC9CFF; }
-
-.colors__color-item_color-7 {
-  top: 685px;
-  background: #6FCF97; }
-
-.text-position {
-  position: absolute;
-  left: 260px; }
-
-.text-mix {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 19px;
-  line-height: 29px;
-  font-style: normal; }
-
-.colors__color-title {
-  font-weight: bold; }
-
-.colors__color-code {
-  font-weight: normal; }
-
-.colors__text-item_text-1 {
-  width: 159px;
-  height: 57px;
-  top: 152px; }
-
-.colors__text-item_text-2 {
-  width: 150px;
-  height: 57px;
-  top: 242px; }
-
-.colors__text-item_text-3 {
-  width: 151px;
-  height: 57px;
-  top: 332px; }
-
-.colors__text-item_text-4 {
-  width: 149px;
-  height: 57px;
-  top: 422px; }
-
-.colors__text-item_text-5 {
-  width: 139px;
-  height: 58px;
-  top: 511px; }
-
-.colors__text-item_text-6 {
-  width: 82px;
-  height: 58px;
-  top: 601px; }
-
-.colors__text-item_text-7 {
-  width: 77px;
-  height: 57px;
-  top: 692px; }
-
-.colors__text-item_no-bold {
-  font-weight: normal; }
-
-.tags {
+.color-description {
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
-  width: calc(403 / 1440 * 100%);
-  height: calc(321 / 900 * 100%);
-  max-width: 403px;
-  /*the width of this block in layout*/
-  max-height: 321px;
-  /*the height of this block in layout*/
-  margin-top: calc(145 / 900 * 100%);
-  margin-left: calc(846 / 1440 * 100%);
-  /*margin-top: 16%;
-  margin-left: 58.75%;
-  width: 28%;
-  height: 35.7%;*/ }
+  flex: 0 0 calc(159 / 269.26 * 100%);
+  height: 100%;
+  align-items: center;
+  font-family: 'Quicksand';
+  font-size: 19px;
+  line-height: 29px;
+  font-style: normal;
+  font-weight: normal; }
+
+.color-description__color-name {
+  width: 100%;
+  font-weight: bold; }
+
+.color-block__color-square_color_dark-75 {
+  background-color: rgba(31, 32, 65, 0.75); }
+
+.color-block__color-square_color_dark-50 {
+  background-color: rgba(31, 32, 65, 0.5); }
+
+.color-block__color-square_color_dark-25 {
+  background-color: rgba(31, 32, 65, 0.25); }
+
+.color-block__color-square_color_dark-5 {
+  background-color: rgba(31, 32, 65, 0.05); }
+
+.color-block__color-square_color_purple {
+  background-color: #BC9CFF; }
+
+.color-block__color-square_color_green {
+  background-color: #6FCF97; }
 
 .tag {
   flex-basis: 100%;
