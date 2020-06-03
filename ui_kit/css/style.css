@@ -33,6 +33,11 @@
   display: flex;
   border: 1px solid black; }
 
+.headers-and-footers {
+  width: 1440px;
+  height: 1350px;
+  border: 1px solid black; }
+
 .logo-wrapper {
   display: flex;
   width: calc(108 / 1440 * 100%);
@@ -161,3 +166,76 @@
 .tag__tag-description_weight_bold {
   font-style: normal;
   font-weight: bold; }
+
+.button {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 15px;
+  text-transform: uppercase;
+  border-radius: 22px; }
+
+.button-border-gradient {
+  padding: 2px;
+  max-width: 79px;
+  height: 34px;
+  border-radius: 22px;
+  text-align: center;
+  background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+
+.button_button-type_login {
+  vertical-align: middle;
+  padding: 9px 19px;
+  color: #BC9CFF;
+  background-color: #FFFFFF;
+  border: none; }
+
+.button_button-type_register {
+  padding: 9px 19px;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border: none; }
+
+.dropdown-look {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 20px; }
+
+.dropdown-look__name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+  align-items: center;
+  margin-right: 10px; }
+
+.dropdown-list {
+  visibility: hidden; }
+
+.dropdown-look:hover .dropdown-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  visibility: visible;
+  list-style: none; }
+
+.dropdown-arrow {
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid rgba(31, 32, 65, 0.5);
+  border-right: 2px solid rgba(31, 32, 65, 0.5);
+  transform: rotate(135deg); }
+
+.dropdown-list__item {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5); }

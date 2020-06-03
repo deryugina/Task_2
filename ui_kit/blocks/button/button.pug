@@ -1,0 +1,12 @@
+mixin button(options)
+  -var buttonClass = "button"
+
+  if options.buttonType
+    -buttonClass += " button_button-type_" + options.buttonType
+
+    if options.buttonType == 'login'
+      div.button-border-gradient
+        button(class=buttonClass)=options.buttonName
+    else
+      button(class=buttonClass)=options.buttonName
+

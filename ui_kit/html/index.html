@@ -45,14 +45,57 @@
                   <!--span(class=tagDescription)= options.tagDescription--><span class="tag__tag-description tag__tag-description_opacity_high">This is the body text which is used for most of the design, like paragraphs, lists, etc.</span>
                 </div>
       </div>
-      <!--+tag('h1', 'This one is the sub-section or widget title')-->
-      <!--+tag('h2', 'Next one is the item title inside widgets')-->
-      <!--+tag('h3', 'this is a label or cta text')-->
-      <!--+tag('Body', 'This is the body text which is used for most of the design, like para-->
-      <!-- graphs, lists, etc.')-->
-      <!-- write block Form Elements-->
-      <!-- write block Cards -->
-      <!-- write block Headers & Footers-->
+    </div>
+    <div class="headers-and-footers">
+            <div class="button-border-gradient">
+              <button class="button button_button-type_login">login</button>
+            </div>
+            <button class="button button_button-type_register">register</button>
+      <!--mixin dropdown(options)
+      //div.dropdown-look
+        //- var count = 0;
+        //- var classList = 'dropdown-list';
+        //ul(class=classList)
+          //- classList += '__item'
+          //while count < 4
+            //li(class=classList) 
+            //- count++
+      
+      
+      //- var listClass = 'dropdown-list'
+      
+      //div.dropdown-look
+        span.dropdown-look__name
+        span.dropdown-look__arrow
+          ul.dropdown-list
+            - listClass += '__item'
+            - var count = 0
+            while count < 4
+              - li= rabotai
+              - count++
+      
+              //li(class=listClass)= options.serviceName
+              //- count++
+      -->
+            <div class="dropdown-look"><span class="dropdown-look__name">Services</span><span class="dropdown-arrow">
+                <!--span.dropdown-arrow__item--></span>
+              <ul class="dropdown-list">
+                          <li class="dropdown-list__item">Service-1</li>
+                          <li class="dropdown-list__item">Service-2</li>
+                          <li class="dropdown-list__item">Service-3</li>
+              </ul>
+            </div>
+      <!--include ../blocks/logo/logo.svg-->
+      <!--//div.header-wrapper-->
+      <!--include-->
+      <!--//div.footer-wrapper-->
+      <!--include-->
+      <!--//div.button-wrapper-->
+      <!--//include ../blocks/button/button.pug-->
+      <!--+button({buttonType: 'login', buttonName: 'login'})-->
+      <!--+button({buttonType: 'register', buttonName: 'register'})-->
+      <!--// write block Form Elements-->
+      <!--// write block Cards -->
     </div>
   </body>
 </html>

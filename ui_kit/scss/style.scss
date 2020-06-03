@@ -45,6 +45,12 @@
 	border: 1px solid black;
 }
 
+.headers-and-footers {
+  width: 1440px;
+  height: 1350px;
+	border: 1px solid black;
+}
+
 .logo-wrapper {
   display: flex;
   width: calc(108 / 1440 * 100%);
@@ -77,6 +83,8 @@
 @import '../blocks/logo/logo.scss';
 @import '../blocks/colors/color.scss';
 @import '../blocks/tags/tag.scss';
+@import '../blocks/button/button.scss';
+@import '../blocks/dropdown/dropdown.scss';
 
 //the second way to center logo-block:
 //
