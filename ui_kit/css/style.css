@@ -167,7 +167,7 @@
   font-style: normal;
   font-weight: bold; }
 
-.button {
+.form-button__button {
   font-family: 'Montserrat';
   font-size: 12px;
   font-style: normal;
@@ -176,7 +176,7 @@
   text-transform: uppercase;
   border-radius: 22px; }
 
-.button-border-gradient {
+.form-button__button-border-gradient {
   padding: 2px;
   max-width: 79px;
   height: 34px;
@@ -184,18 +184,26 @@
   text-align: center;
   background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
 
-.button_button-type_login {
+.form-button__button_button-type_login {
   vertical-align: middle;
   padding: 9px 19px;
   color: #BC9CFF;
   background-color: #FFFFFF;
   border: none; }
 
-.button_button-type_register {
+.form-button__button_button-type_register {
   padding: 9px 19px;
   color: #FFFFFF;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border: none; }
+
+.dropdown-list__item {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5); }
 
 .dropdown-look {
   display: flex;
@@ -231,11 +239,3 @@
   border-top: 2px solid rgba(31, 32, 65, 0.5);
   border-right: 2px solid rgba(31, 32, 65, 0.5);
   transform: rotate(135deg); }
-
-.dropdown-list__item {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: rgba(31, 32, 65, 0.5); }

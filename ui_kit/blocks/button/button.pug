@@ -1,12 +1,14 @@
 mixin button(options)
-  -var buttonClass = "button"
+  -var buttonClass = "form-button__button"
 
   if options.buttonType
-    -buttonClass += " button_button-type_" + options.buttonType
+    -buttonClass += " form-button__button_button-type_" + options.buttonType
 
     if options.buttonType == 'login'
-      div.button-border-gradient
+      form(class="form-button" name="login-button" action="url")
+      div.form-button__button-border-gradient
         button(class=buttonClass)=options.buttonName
     else
-      button(class=buttonClass)=options.buttonName
+      form(class="form-button" name="register-button" action="url")
+        button(class=buttonClass)=options.buttonName
 
