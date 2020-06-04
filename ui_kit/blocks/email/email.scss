@@ -1,0 +1,23 @@
+.form-email {
+  width: 260px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-email__input {
+  width: 134px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.form-email__input_position {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  margin-left: 15px;
+}
+
+//REWRITE THIS ALL IN PERCENT

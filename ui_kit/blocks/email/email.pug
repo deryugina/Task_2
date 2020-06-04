@@ -1,0 +1,9 @@
+mixin email(options)
+
+  -var inputClassName = "form-email__input"
+
+  - inputClassName += options.inputPosition ? " form-email__input_position" : ""
+
+  form(class="form-email" name="email" action="url")
+    input(class=inputClassName type="email" placeholder="Your email address")
+    span(class="form-email__arrow")
