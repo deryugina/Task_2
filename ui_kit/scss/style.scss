@@ -38,6 +38,17 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Material-Icons';
+	src: url('../fonts/Material-Icons/MaterialIcons-Regular.eot');
+	src: local('☺'), url('../fonts/Material-Icons/MaterialIcons-Regular.woff2') format('woff2'),
+  url('../fonts/Material-Icons/MaterialIcons-Regular.woff') format('woff'),
+	url('../fonts/Material-Icons/MaterialIcons-Regular.ttf') format('truetype'), 
+  url('../fonts/Material-Icons/MaterialIcons-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .colors-and-type {
 	width: 1440px;
 	height: 900px;
