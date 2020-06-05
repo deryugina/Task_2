@@ -1,37 +1,11 @@
 mixin dropdown(options)
   div.dropdown-look
-    span.dropdown-look__name= options.dropdownName
-    span.dropdown-arrow
-      //span.dropdown-arrow__item
-    ul.dropdown-list
-      include ./dropdown-li/dropdown-li.pug
+    select.dropdown= options.dropdownName
+      include ./dropdown-option/dropdown-option.pug
 
-      +dropdown-li('Service-1')
-      +dropdown-li('Service-2')
-      +dropdown-li('Service-3')
+      +dropdown-item('Service-1')
+      +dropdown-item('Service-2')
+      +dropdown-item('Service-3')
 
-//mixin dropdown(options)
-  //div.dropdown-look
-    //- var count = 0;
-    //- var classList = 'dropdown-list';
-    //ul(class=classList)
-      //- classList += '__item'
-      //while count < 4
-        //li(class=classList) 
-        //- count++
-  
-
-  //- var listClass = 'dropdown-list'
-
-  //div.dropdown-look
-    span.dropdown-look__name
-    span.dropdown-look__arrow
-      ul.dropdown-list
-        - listClass += '__item'
-        - var count = 0
-        while count < 4
-          - li= rabotai
-          - count++
-
-          //li(class=listClass)= options.serviceName
-          //- count++
+    div.dropdown-arrow
+      include ./expand_more.svg

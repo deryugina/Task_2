@@ -54,39 +54,17 @@
             <form class="form-button" name="register-button" action="url">
               <button class="form-button__button form-button__button_button-type_register">register</button>
             </form>
-      <!--mixin dropdown(options)
-      //div.dropdown-look
-        //- var count = 0;
-        //- var classList = 'dropdown-list';
-        //ul(class=classList)
-          //- classList += '__item'
-          //while count < 4
-            //li(class=classList) 
-            //- count++
-      
-      
-      //- var listClass = 'dropdown-list'
-      
-      //div.dropdown-look
-        span.dropdown-look__name
-        span.dropdown-look__arrow
-          ul.dropdown-list
-            - listClass += '__item'
-            - var count = 0
-            while count < 4
-              - li= rabotai
-              - count++
-      
-              //li(class=listClass)= options.serviceName
-              //- count++
-      -->
-            <div class="dropdown-look"><span class="dropdown-look__name">Services</span><span class="dropdown-arrow">
-                <!--span.dropdown-arrow__item--></span>
-              <ul class="dropdown-list">
-                          <li class="dropdown-list__item">Service-1</li>
-                          <li class="dropdown-list__item">Service-2</li>
-                          <li class="dropdown-list__item">Service-3</li>
-              </ul>
+            <div class="dropdown-look">
+              <select class="dropdown">Services
+                          <option class="dropdown__item"><a class="dropdown__link" href="#">Service-1</a></option>
+                          <option class="dropdown__item"><a class="dropdown__link" href="#">Service-2</a></option>
+                          <option class="dropdown__item"><a class="dropdown__link" href="#">Service-3</a></option>
+              </select>
+              <div class="dropdown-arrow"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+</svg>
+
+              </div>
             </div>
             <form class="form-email" name="email" action="url">
               <input class="form-email__input form-email__input_position" type="email" placeholder="Your email address"><span class="form-email__material-icons form-email__material-icons_position">🡢</span>
