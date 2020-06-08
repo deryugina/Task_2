@@ -1,11 +1,10 @@
-@import './dropdown-option/dropdown-option.scss';
-
 .dropdown-look {
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  //flex: 1 1 100%;
+  width: 100%;
   height: 20px;
 }
 
@@ -16,15 +15,13 @@
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
-  margin-right: 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   border: none;
 }
 
-.dropdown-arrow {
-}
+@import './dropdown-option/dropdown-option.scss';
 
 /*.dropdown-look::before {
   content: '';

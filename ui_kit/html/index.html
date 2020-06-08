@@ -93,6 +93,28 @@
             <form class="form-email" name="email" action="url">
               <input class="form-email__input form-email__input_position" type="email" placeholder="Your email address"><span class="form-email__material-icons form-email__material-icons_position">🡢</span>
             </form>
+            <ul class="menu">
+                      <li class="menu__item menu__item_width_1 menu__item_position_no-margin"><a class="menu__link">Home</a></li>
+                      <li class="menu__item menu__item_width_2"><a class="menu__link">About Us</a></li>
+                      <li class="menu__item menu__item_width_3">
+                        <!--+dropdown({dropdownName: 'Services'})-->
+                                  <div class="dropdown-look">
+                                    <select class="dropdown">
+                                                    <option class="dropdown__item"><a class="dropdown__link" href="#">Service-1</a></option>
+                                                    <option class="dropdown__item"><a class="dropdown__link" href="#">Service-2</a></option>
+                                                    <option class="dropdown__item"><a class="dropdown__link" href="#">Service-3</a></option>
+                                    </select>
+                                    <div class="dropdown-arrow"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+</svg>
+
+                                    </div>
+                                  </div>
+                      </li>
+                      <li class="menu__item menu__item_width_4 menu__item_position_other-margin"><a class="menu__link">Careers</a></li>
+                      <li class="menu__item menu__item_width_5"><a class="menu__link">News</a></li>
+                      <li class="menu__item menu__item_width_6"><a class="menu__link">Documentation</a></li>
+            </ul>
       <!--include ../blocks/logo/logo.svg-->
       <!--//div.header-wrapper-->
       <!--include-->

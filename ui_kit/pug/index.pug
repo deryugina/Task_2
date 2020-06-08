@@ -35,15 +35,19 @@ html(lang="en")
         include ../blocks/toxin/Logo.svg
         include ../blocks/button/button.pug
 
-        +button({buttonType: 'login', buttonName: 'login'})
-        +button({buttonType: 'register', buttonName: 'register'})
+        + button({buttonType: 'login', buttonName: 'login'})
+        + button({buttonType: 'register', buttonName: 'register'})
         include ../blocks/dropdown/dropdown.pug
 
-        +dropdown({dropdownName: 'Services'})
+        + dropdown({dropdownName: 'Services'})
 
         include ../blocks/email/email.pug
 
-        +email({inputPosition: true, iconPosition: true})
+        + email({inputPosition: true, iconPosition: true})
+
+        include ../blocks/menu/menu.pug
+
+        + menu({})
 
           //div.logo-wrapper
         //include ../blocks/logo/logo.svg
