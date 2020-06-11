@@ -1,0 +1,7 @@
+mixin dropdown-li(options)
+  - var dropdownItemClass = "dropdown__item"
+
+  if options.dropdownItemStyle
+  - dropdownItemClass += " dropdown__item_style_" + options.dropdownItemStyle
+    
+  li(class=dropdownItemClass)= options.dropdownItemName
