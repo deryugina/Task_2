@@ -1,0 +1,21 @@
+mixin menu(options)
+  - var menuItemName = "menu__item"
+  //- menuItemClass += " menu__item_width_" + options.menuItemWidth
+
+  ul.menu
+    each item in options.items
+      li(class=menuItemName)= item
+    //each item in [...items] ? items : ['There are not items']
+      //li= item
+    //include ./menu-li/menu-li.pug
+    //
+    //+ menu-li({menuItemName: 'Home', menuItemPosition: 'no-margin', menuItemWidth: '1'})
+    //+ menu-li({menuItemName: 'About Us', menuItemWidth: '2'})
+//
+    + menu-li({menuDropdown: 'true', menuNoLink: 'true', menuItemWidth: '3'})
+
+    include ./menu-li/menu-li.pug
+    
+    + menu-li({menuItemName: 'Careers', menuItemPosition: 'other-margin', menuItemWidth: '4'})
+    + menu-li({menuItemName: 'News', menuItemWidth: '5'})
+    + menu-li({menuItemName: 'Documentation', menuItemWidth: '6'})
