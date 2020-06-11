@@ -62,7 +62,7 @@
 	border: 1px solid black;
 }
 
-.logo-wrapper {
+/*.logo-wrapper {
   display: flex;
   width: calc(108 / 1440 * 100%);
   height: calc(108 / 900 * 100%);
@@ -76,9 +76,9 @@
   height: calc(610 / 900 * 100%);
   margin-top: calc(145 / 1440 * 100%);
   margin-left: calc(41.74 / 1440 * 100%);
-}
+}*/
 
-.tags-wrapper {
+/*.tags-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -95,9 +95,11 @@
 @import '../blocks/colors/color.scss';
 @import '../blocks/tags/tag.scss';
 @import '../blocks/button/button.scss';
-@import '../blocks/dropdown/dropdown.scss';
+@import '../blocks/dropdown-2/dropdown-2.scss';
 @import '../blocks/email/email.scss';
 @import '../blocks/menu/menu.scss';
+@import '../blocks/dropdown/dropdown.scss';*/
+@import '../blocks/header-1/header-1.scss';
 
 //the second way to center logo-block:
 //

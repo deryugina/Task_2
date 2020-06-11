@@ -1,0 +1,33 @@
+.header-1 {
+  width: 1440px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  //border: 1px solid black;
+}
+
+.toxin-wrapper {
+  margin-left: 140px;
+}
+
+.toxin-wrapper .toxin {
+  width: 115px;
+  height: 46px;
+}
+
+.menu-wrapper {
+  height: 21px;
+  margin-left: 297.31px;
+}
+
+.button-login-wrapper {
+  margin-left: 30px;
+}
+
+.button-register-wrapper {
+  margin-left: 20px;
+}
+
+@import '../menu/menu.scss';
+@import '../button/button.scss';
+@import '../dropdown/dropdown.scss';

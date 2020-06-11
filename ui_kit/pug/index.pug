@@ -32,33 +32,28 @@ html(lang="en")
         +tag({ tagName: 'Body', tagDescription: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', size: 'size-body', opacity: 'high', transform: 'none'})
 
     div.headers-and-footers
-        include ../blocks/toxin/Logo.svg
-        include ../blocks/button/button.pug
+        include ../blocks/header-1/header-1.pug
 
-        + button({buttonType: 'login', buttonName: 'login'})
-        + button({buttonType: 'register', buttonName: 'register'})
-        include ../blocks/dropdown/dropdown.pug
+        +header-1({items: ['Home', 'About Us', 'Careers', 'News', 'Documentation']})
+        //include ../blocks/toxin/Logo.svg
+        //
+        //include ../blocks/button/button.pug
+        //+ button({buttonType: 'login', buttonName: 'login'})
+        //+ button({buttonType: 'register', buttonName: 'register'})
+        //
+        //include ../blocks/dropdown/dropdown.pug
+        //+ dropdown({dropdownName: 'Services'})
+        //
+        //include ../blocks/dropdown-2/dropdown-2.pug
+        //+dropdown({dropdownName: 'Services'})
+        //
+        //include ../blocks/email/email.pug
+        //+ email({inputPosition: true, iconPosition: true})
+        //
+        //include ../blocks/menu/menu.pug
+        //+ menu({})
 
-        + dropdown({dropdownName: 'Services'})
-
-        include ../blocks/email/email.pug
-
-        + email({inputPosition: true, iconPosition: true})
-
-        include ../blocks/menu/menu.pug
-
-        + menu({})
 
           //div.logo-wrapper
         //include ../blocks/logo/logo.svg
-        ////div.header-wrapper
-        //include
-        ////div.footer-wrapper
-        //include
-        ////div.button-wrapper
         ////include ../blocks/button/button.pug
-
-        //+button({buttonType: 'login', buttonName: 'login'})
-        //+button({buttonType: 'register', buttonName: 'register'})
-        //// write block Form Elements
-        //// write block Cards 
