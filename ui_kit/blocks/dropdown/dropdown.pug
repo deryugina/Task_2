@@ -1,11 +1,19 @@
 mixin dropdown(options)
+
+  - var dropdownClass = "dropdown"
+
+  if options.dropdownStyle
+  - dropdownClass += " dropdown_style_" + options.dropdownStyle
+  
   div.dropdown-look
-    select.dropdown= options.dropdownName
-      include ./dropdown-option/dropdown-option.pug
-
-      +dropdown-item('Service-1')
-      +dropdown-item('Service-2')
-      +dropdown-item('Service-3')
-
-    div.dropdown-arrow
+    span.dropdown-name= options.dropdownName
+    span.dropdown-arrow
       include ./expand_more.svg
+
+    ul(class=dropdownClass)
+      include ./dropdown-li/dropdown-li.pug
+      +dropdown-li({dropdownItemName: 'Service-1'})
+      +dropdown-li({dropdownItemName: 'Service-2'})
+      +dropdown-li({dropdownItemName: 'Service-3'})
+
+      
