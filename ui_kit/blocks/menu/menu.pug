@@ -1,10 +1,9 @@
-mixin menu(options)
-  - var menuItemName = "menu__item"
+mixin menu(itemsParametrs)
+  //- var menuItemName = "menu__item"
   //- menuItemClass += " menu__item_width_" + options.menuItemWidth
-
   ul.menu
-    each item in options.items
-      li(class=menuItemName)= item
+    each item in itemsParametrs
+      li= menuItemName
     //each item in [...items] ? items : ['There are not items']
       //li= item
     //include ./menu-li/menu-li.pug

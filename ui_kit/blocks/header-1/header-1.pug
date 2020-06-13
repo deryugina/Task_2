@@ -1,4 +1,4 @@
-mixin header-1(options)
+mixin header-1(itemsParametrs)
   div.header-1
     include ../menu/menu.pug
     include ../button/button.pug
@@ -7,7 +7,7 @@ mixin header-1(options)
       include ../toxin/Logo.svg
 
     div.menu-wrapper
-      +menu(options)
+      +menu(itemsParametrs)
 
     div.button-login-wrapper
       +button({buttonType: 'login', buttonName: 'login'})

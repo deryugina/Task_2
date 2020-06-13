@@ -32,9 +32,12 @@ html(lang="en")
         +tag({ tagName: 'Body', tagDescription: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', size: 'size-body', opacity: 'high', transform: 'none'})
 
     div.headers-and-footers
-        include ../blocks/header-1/header-1.pug
+      - var itemsParametrs = [{menuItemName: 'Home', menuItemStyle:'bold'}, {menuItemName: 'About Us', menuItemStyle:'other-margin'}, {menuItemName: 'Careers'}, {menuItemName: 'News'}, {menuItemName: 'Documentation', menuItemStyle:'no-margin'}]
 
-        +header-1({items: ['Home', 'About Us', 'Careers', 'News', 'Documentation']})
+      include ../blocks/header-1/header-1.pug
+
+      +header-1(itemsParametrs)
+      //+header-1({items: ['Home', 'About Us', 'Careers', 'News', 'Documentation']})
         //include ../blocks/toxin/Logo.svg
         //
         //include ../blocks/button/button.pug
