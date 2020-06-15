@@ -23,6 +23,7 @@ html(lang="en")
 
       div.tags-wrapper
         include ../blocks/tags/tag.pug
+        - var items = { "itemName1": 'Home', "itemName2": 'About Us', "itemName3": 'Careers'};
 
         +tag({ tagName: 'h1', tagDescription: 'This one is the sub-section or widget title', size: 'size-h1', font: 'quicksand'})
 
@@ -32,11 +33,9 @@ html(lang="en")
         +tag({ tagName: 'Body', tagDescription: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', size: 'size-body', opacity: 'high', transform: 'none'})
 
     div.headers-and-footers
-      - var itemsParametrs = [{menuItemName: 'Home', menuItemStyle:'bold'}, {menuItemName: 'About Us', menuItemStyle:'other-margin'}, {menuItemName: 'Careers'}, {menuItemName: 'News'}, {menuItemName: 'Documentation', menuItemStyle:'no-margin'}]
-
       include ../blocks/header-1/header-1.pug
 
-      +header-1(itemsParametrs)
+      +header-1(items)
       //+header-1({items: ['Home', 'About Us', 'Careers', 'News', 'Documentation']})
         //include ../blocks/toxin/Logo.svg
         //
@@ -60,3 +59,5 @@ html(lang="en")
           //div.logo-wrapper
         //include ../blocks/logo/logo.svg
         ////include ../blocks/button/button.pug
+      //- var items = [{menuItemName: 'Home', menuItemStyle:'bold'}, {menuItemName: 'About Us', menuItemStyle:'other-margin'}, {menuItemName: 'Careers'}, {menuItemName: 'News'}, {menuItemName: 'Documentation', menuItemStyle:'no-margin'}]
+       //- var items = {'item1': {'name':"Home"}, 'item2': {'name':"About Us", 'style':"other-margin"}, 'item3': {'name':"Careers"}};
