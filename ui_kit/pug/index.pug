@@ -23,7 +23,6 @@ html(lang="en")
 
       div.tags-wrapper
         include ../blocks/tags/tag.pug
-        - var items = { "itemName1": 'Home', "itemName2": 'About Us', "itemName3": 'Careers'};
 
         +tag({ tagName: 'h1', tagDescription: 'This one is the sub-section or widget title', size: 'size-h1', font: 'quicksand'})
 
@@ -34,6 +33,13 @@ html(lang="en")
 
     div.headers-and-footers
       include ../blocks/header-1/header-1.pug
+      - var item1 = { "itemName": 'Home', "itemStyle": 'bold'};
+      - var item2 = { "itemName": 'About Us'};
+      - var item3 = { "dropdown": 'true', "itemStyle": 'other-margin'};
+      - var item4 = { "itemName": 'Careers'};
+      - var item5 = { "itemName": 'News'};
+      - var item6 = { "itemName": 'Documentation', "itemStyle": 'no-margin'};
+      - var items = {item1, item2, item3, item4, item5, item6};
 
       +header-1(items)
       //+header-1({items: ['Home', 'About Us', 'Careers', 'News', 'Documentation']})
@@ -61,3 +67,4 @@ html(lang="en")
         ////include ../blocks/button/button.pug
       //- var items = [{menuItemName: 'Home', menuItemStyle:'bold'}, {menuItemName: 'About Us', menuItemStyle:'other-margin'}, {menuItemName: 'Careers'}, {menuItemName: 'News'}, {menuItemName: 'Documentation', menuItemStyle:'no-margin'}]
        //- var items = {'item1': {'name':"Home"}, 'item2': {'name':"About Us", 'style':"other-margin"}, 'item3': {'name':"Careers"}};
+      //- var items = { "itemName1": 'Home', "itemName2": 'About Us', "itemName3": 'Careers'};

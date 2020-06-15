@@ -1,9 +1,15 @@
 mixin menu(items)
-  //- var res1 = items["one"];
-  //- var res2 = items["two"];
+  include ../dropdown/dropdown.pug
+  - var className = "menu__item"
   ul.menu
-  each item in items
-    li= item
+    each item in items
+      if item["dropdown"] === 'true' 
+        +dropdown({dropdownName: 'Services'})
+      if item["itemStyle"]
+        - className += " menu__item_style_" + item["itemStyle"]
+        li(class=className)= item["itemName"]
+      else
+        li(class=className)= item["itemName"]
     //each item in [...items] ? items : ['There are not items']
       //li= item
     //include ./menu-li/menu-li.pug
@@ -21,3 +27,5 @@ mixin menu(items)
   //- var menuItemName = "menu__item"
   //- menuItemClass += " menu__item_width_" + options.menuItemWidth
     //each item in items
+  //- var res1 = items["one"];
+  //- var res2 = items["two"];
