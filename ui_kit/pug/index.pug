@@ -33,38 +33,15 @@ html(lang="en")
 
     div.headers-and-footers
       include ../blocks/header-1/header-1.pug
-      - var item1 = { "itemName": 'Home', "itemStyle": 'bold'};
-      - var item2 = { "itemName": 'About Us'};
-      - var item3 = { "dropdown": 'true', "itemStyle": 'other-margin'};
-      - var item4 = { "itemName": 'Careers'};
-      - var item5 = { "itemName": 'News'};
-      - var item6 = { "itemName": 'Documentation', "itemStyle": 'no-margin'};
-      - var items = {item1, item2, item3, item4, item5, item6};
+      -
+        var items = [
+          { "itemName": 'Home', "itemStyle": 'bold'},
+          { "itemName": 'About Us'},
+          { "dropdown": 'true', "itemStyle": 'other-margin'},
+          { "itemName": 'Careers'},
+          { "itemName": 'News'},
+          { "itemName": 'Documentation', "itemStyle": 'no-margin'}
+        ]
 
       +header-1(items)
-      //+header-1({items: ['Home', 'About Us', 'Careers', 'News', 'Documentation']})
-        //include ../blocks/toxin/Logo.svg
-        //
-        //include ../blocks/button/button.pug
-        //+ button({buttonType: 'login', buttonName: 'login'})
-        //+ button({buttonType: 'register', buttonName: 'register'})
-        //
-        //include ../blocks/dropdown/dropdown.pug
-        //+ dropdown({dropdownName: 'Services'})
-        //
-        //include ../blocks/dropdown-2/dropdown-2.pug
-        //+dropdown({dropdownName: 'Services'})
-        //
-        //include ../blocks/email/email.pug
-        //+ email({inputPosition: true, iconPosition: true})
-        //
-        //include ../blocks/menu/menu.pug
-        //+ menu({})
 
-
-          //div.logo-wrapper
-        //include ../blocks/logo/logo.svg
-        ////include ../blocks/button/button.pug
-      //- var items = [{menuItemName: 'Home', menuItemStyle:'bold'}, {menuItemName: 'About Us', menuItemStyle:'other-margin'}, {menuItemName: 'Careers'}, {menuItemName: 'News'}, {menuItemName: 'Documentation', menuItemStyle:'no-margin'}]
-       //- var items = {'item1': {'name':"Home"}, 'item2': {'name':"About Us", 'style':"other-margin"}, 'item3': {'name':"Careers"}};
-      //- var items = { "itemName1": 'Home', "itemName2": 'About Us', "itemName3": 'Careers'};
