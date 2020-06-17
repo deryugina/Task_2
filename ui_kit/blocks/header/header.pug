@@ -1,0 +1,23 @@
+mixin header(items, user)
+  div.header
+    include ../menu/menu.pug
+    include ../button/button.pug
+
+    div.toxin-wrapper
+      include ../toxin/Logo.svg
+
+    div.menu-wrapper
+      +menu(items)
+
+    if user === "undefined"
+      div.button-login-wrapper
+        +button({buttonType: 'login', buttonName: 'login'})
+      div.button-register-wrapper
+        +button({buttonType: 'register', buttonName: 'register'})
+    else
+      div.vertical-line-wrapper
+        div.vertical-line
+      div.user-name-wrapper
+        div.user-name
+
+
