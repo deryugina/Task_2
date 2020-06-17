@@ -169,7 +169,7 @@
   display: flex;
 	border: 1px solid black;
 }*/
-.colors-wrapper {
+.template-page__colors-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -178,7 +178,7 @@
   margin-top: calc(145 / 1440 * 100%);
   margin-left: calc(41.74 / 1440 * 100%); }
 
-.tags-wrapper {
+.template-page__tags-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -355,7 +355,7 @@
   width: 1440px;
   height: 1350px; }
 
-.header-wrapper {
+.template-page__header-wrapper {
   width: 1440px;
   height: 70px;
   margin-top: 176px; }
