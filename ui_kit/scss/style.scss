@@ -1,66 +1,7 @@
-@font-face {
-	font-family: 'Quicksand';
-	src: url('../fonts/Quicksand-Regular/Quicksand-Regular.eot');
-	src: local('☺'), url('../fonts/Quicksand-Regular/Quicksand-Regular.woff') format('woff'), 
-	url('../fonts/Quicksand-Regular/Quicksand-Regular.ttf') format('truetype'), 
-  url('../fonts/Quicksand-Regular/Quicksand-Regular.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Quicksand';
-	src: url('../fonts/Quicksand-Bold/Quicksand-Bold.eot');
-	src: local('☺'), url('../fonts/Quicksand-Bold/Quicksand-Bold.woff') format('woff'), 
-	url('../fonts/Quicksand-Bold/Quicksand-Bold.ttf') format('truetype'), 
-  url('../fonts/Quicksand-Bold/Quicksand-Bold.svg') format('svg');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Montserrat';
-	src: url('../fonts/Montserrat/MontserratRegular.eot');
-	src: local('☺'), url('../fonts/Montserrat/MontserratRegular.woff') format('woff'), 
-	url('../fonts/Montserrat/MontserratRegular.ttf') format('truetype'), 
-  url('../fonts/Montserrat/MontserratRegular.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Montserrat';
-	src: url('../fonts/Montserrat-bold/MontserratBold.eot');
-	src: local('☺'), url('../fonts/Montserrat-bold/MontserratBold.woff') format('woff'), 
-	url('../fonts/Montserrat-bold/MontserratBold.ttf') format('truetype'), 
-  url('../fonts/Montserrat-bold/MontserratBold.svg') format('svg');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Material-Icons';
-	src: url('../fonts/Material-Icons/MaterialIcons-Regular.eot');
-	src: local('☺'), url('../fonts/Material-Icons/MaterialIcons-Regular.woff2') format('woff2'),
-  url('../fonts/Material-Icons/MaterialIcons-Regular.woff') format('woff'),
-	url('../fonts/Material-Icons/MaterialIcons-Regular.ttf') format('truetype'), 
-  url('../fonts/Material-Icons/MaterialIcons-Regular.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-.colors-and-type {
-	width: 1440px;
-	height: 900px;
-  display: flex;
-	border: 1px solid black;
-}
-
-.headers-and-footers {
-  width: 1440px;
-  height: 1350px;
-	border: 1px solid black;
-}
+@import '../templates/template.scss';
+@import '../fonts/fonts.scss';
+@import '../pages/colors-and-type/colors-and-type.scss';
+@import '../pages/headers-and-footers/headers-and-footers.scss';
 
 /*.logo-wrapper {
   display: flex;
@@ -94,12 +35,8 @@
 @import '../blocks/logo/logo.scss';
 @import '../blocks/colors/color.scss';
 @import '../blocks/tags/tag.scss';
-@import '../blocks/button/button.scss';
 @import '../blocks/dropdown-2/dropdown-2.scss';
-@import '../blocks/email/email.scss';
-@import '../blocks/menu/menu.scss';
-@import '../blocks/dropdown/dropdown.scss';*/
-@import '../blocks/header-1/header-1.scss';
+@import '../blocks/email/email.scss';*/
 
 //the second way to center logo-block:
 //

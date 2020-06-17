@@ -3,7 +3,7 @@ mixin dropdown(options)
   - var dropdownClass = "dropdown"
 
   if options.dropdownStyle
-  - dropdownClass += " dropdown_style_" + options.dropdownStyle
+    - dropdownClass += " dropdown_style_" + options.dropdownStyle
   
   div.dropdown-look
     span.dropdown-name= options.dropdownName

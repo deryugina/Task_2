@@ -21,14 +21,14 @@ mixin tag(options)
 
   div(class=tagBlockName)
     span(class=tagElemName)= options.tagName
-    //span(class=tagDescription)= options.tagDescription
     span(class=tagElemDescription)= options.tagDescription
 
     
-//mixin tag(options)
-//
-//  -var className = "tag tag_size_" + options.size
-//
-//  div(class=className)
-//    span.tag-name= options.tagName
-//    span.tag-description= options.tagDescription
+    //span(class=tagDescription)= options.tagDescription
+  //mixin tag(options)
+  //
+  //  -var className = "tag tag_size_" + options.size
+  //
+  //  div(class=className)
+  //    span.tag-name= options.tagName
+  //    span.tag-description= options.tagDescription

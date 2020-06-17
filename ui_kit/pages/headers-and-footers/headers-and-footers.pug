@@ -1,0 +1,17 @@
+extends ../../templates/template.pug
+
+block header
+  include ../../blocks/header/header.pug
+  - var user = "undefined";
+  -
+    var items = [
+      { "itemName": 'Home', "itemStyle": 'bold'},
+      { "itemName": 'About Us'},
+      { "dropdown": 'true', "itemStyle": 'other-margin'},
+      { "itemName": 'Careers'},
+      { "itemName": 'News'},
+      { "itemName": 'Documentation', "itemStyle": 'no-margin'}
+    ]
+
+  div.template-page__header-wrapper
+    +header(items, user = "undefined")

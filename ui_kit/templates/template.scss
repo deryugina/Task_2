@@ -1,0 +1,15 @@
+@import '../blocks/logo/logo.scss';
+
+.template-page {
+  display: flex;
+  width: 1440px;
+  height: 900px;
+}
+
+.template-page__logo-wrapper {
+  display: flex;
+  width: calc(108 / 1440 * 100%);
+  height: calc(108 / 900 * 100%);
+  //justify-content: center;
+  //align-content: center;
+}

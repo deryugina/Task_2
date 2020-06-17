@@ -3,9 +3,13 @@ mixin menu(items)
   - var className = "menu__item"
   ul.menu
     each item in items
-      if item["dropdown"] === 'true' 
-        +dropdown({dropdownName: 'Services'})
       if item["itemStyle"]
         - className += " menu__item_style_" + item["itemStyle"]
+      else
+        - className = "menu__item"
 
-      li(class=className)= item["itemName"]
+      if item["dropdown"] === 'true' 
+        li(class=className)
+          +dropdown({dropdownName: 'Services'})
+      else
+        li(class=className)= item["itemName"]
