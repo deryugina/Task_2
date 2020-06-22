@@ -5,11 +5,14 @@ mixin menu(items)
     each item in items
       if item["itemStyle"]
         - className += " menu__item_style_" + item["itemStyle"]
-      else
-        - className = "menu__item"
+
+      if item["itemMargin"]
+        - className += " menu__item_margin_" + item["itemMargin"]
 
       if item["dropdown"] === 'true' 
         li(class=className)
           +dropdown({dropdownName: 'Services'})
       else
         li(class=className)= item["itemName"]
+
+      - className = "menu__item"
