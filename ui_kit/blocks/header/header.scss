@@ -3,29 +3,54 @@
   height: 70px;
   display: flex;
   align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   //border: 1px solid black;
 }
 
-.toxin-wrapper {
+.header__toxin-wrapper {
   margin-left: 140px;
 }
 
-.toxin-wrapper .toxin {
+.header__toxin-wrapper .toxin {
   width: 115px;
   height: 46px;
 }
 
-.menu-wrapper {
-  height: 21px;
+.header__menu-wrapper {
+  //height: 21px;
   margin-left: 297.31px;
 }
 
-.button-login-wrapper {
+.header__button-login-wrapper {
   margin-left: 30px;
 }
 
-.button-register-wrapper {
+.header__button-register-wrapper {
   margin-left: 20px;
+}
+
+.header__vertical-line-wrapper {
+
+}
+
+.header__user-name-wrapper {
+  
+}
+
+.vertical-line {
+  width: 30px;
+  height: 1px;
+  background: rgba(31, 32, 65, 0.1);
+  transform: rotate(90deg);
+}
+
+.user-name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
 @import '../menu/menu.scss';
