@@ -1,9 +1,22 @@
 @import '../blocks/logo/logo.scss';
 
-.template-page {
+.logo-wrapper {
   display: flex;
+  width: calc(108 / 1440 * 100%);
+  height: calc(108 / 900 * 100%);
+}
+
+/*.template-page {
+  display: flex;
+  position: relative;
   width: 1440px;
   height: 900px;
+  background: #E5E5E5;
+  border: 1px solid rgb(31, 32, 65);
+}
+
+.template-page:first-child {
+  background: #FFFFFF;
 }
 
 .template-page__logo-wrapper {
@@ -12,4 +25,4 @@
   height: calc(108 / 900 * 100%);
   //justify-content: center;
   //align-content: center;
-}
+}*/

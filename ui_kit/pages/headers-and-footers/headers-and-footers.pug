@@ -1,17 +1,33 @@
 extends ../../templates/template.pug
 
-block header
+block vars
+  - var pageClassName = "headers-and-footers"
+
+block content
   include ../../blocks/header/header.pug
-  - var user = "undefined";
+  - var userStatus = "undefined";
+  - var userName = "Cosmin Negoita"
   -
-    var items = [
+    var itemsUndefined = [
       { "itemName": 'Home', "itemStyle": 'bold'},
       { "itemName": 'About Us'},
-      { "dropdown": 'true', "itemStyle": 'other-margin'},
+      { "dropdown": 'true', "itemMargin": 'other-margin'},
       { "itemName": 'Careers'},
       { "itemName": 'News'},
-      { "itemName": 'Documentation', "itemStyle": 'no-margin'}
+      { "itemName": 'Documentation', "itemMargin": 'no-margin'}
+    ]
+  -
+    var itemsDefined = [
+      { "itemName": 'Home', "itemMargin": 'margin-28', "itemStyle": 'bold'},
+      { "itemName": 'About Us', "itemMargin": 'margin-28'},
+      { "dropdown": 'true', "itemMargin": 'other-margin'},
+      { "itemName": 'Careers', "itemMargin": 'margin-29'},
+      { "itemName": 'News', "itemMargin": 'margin-29'},
+      { "itemName": 'Documentation', "itemMargin": 'no-margin'}
     ]
 
-  div.template-page__header-wrapper
-    +header(items, user = "undefined")
+  div.headers-and-footers__header-undefined
+    +header(itemsUndefined, userStatus = "undefined")
+
+  div.headers-and-footers__header-defined
+    +header(itemsDefined, userStatus = "defined", userName)

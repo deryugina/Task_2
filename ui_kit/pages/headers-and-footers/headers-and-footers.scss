@@ -1,13 +1,22 @@
 @import '../../blocks/header/header.scss';
 
 .headers-and-footers {
+  display: flex;
   width: 1440px;
-  height: 1350px;
-  //border: 1px solid black;
+  height: 900px;
+  background: #E5E5E5;
 }
 
-.template-page__header-wrapper {
+.headers-and-footers__header-undefined {
+  position: absolute;
   width: 1440px;
   height: 70px;
-  margin-top: 176px;
+  margin-top: 150px;
+}
+
+.headers-and-footers__header-defined {
+  position: absolute;
+  width: 1440px;
+  height: 70px;
+  margin-top: 260px;
 }

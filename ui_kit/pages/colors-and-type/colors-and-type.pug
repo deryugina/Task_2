@@ -1,7 +1,10 @@
 extends ../../templates/template.pug
 
-block content1
-  div.template-page__colors-wrapper
+block vars
+  - var pageClassName = "colors-and-type"
+
+block content
+  div.colors-and-type__colors-wrapper
     include ../../blocks/colors/color.pug
 
     +color-block({color: 'dark-100', colorName: 'Dark Shade 100%', colorHex: '#1F2041'})
@@ -12,8 +15,7 @@ block content1
     +color-block({color: 'purple', colorName: 'Purple', colorHex: '#BC9CFF'})
     +color-block({color: 'green', colorName: 'Green', colorHex: '#6FCF97'})
 
-block content2
-  div.template-page__tags-wrapper
+  div.colors-and-type__tags-wrapper
     include ../../blocks/tags/tag.pug
 
     +tag({ tagName: 'h1', tagDescription: 'This one is the sub-section or widget title', size: 'size-h1', font: 'quicksand'})

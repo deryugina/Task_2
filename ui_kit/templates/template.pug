@@ -1,6 +1,15 @@
-div.template-page
-  div.template-page__logo-wrapper
-    include ../blocks/logo/logo.svg
-  block header
-  block content1
-  block content2
+block vars
+  - var pageClassName = ""
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="../css/style.css")
+    title= "Task-2 UI-kit"
+  body
+    div(class=pageClassName)
+      div.logo-wrapper
+        include ../blocks/logo/logo.svg
+      block content

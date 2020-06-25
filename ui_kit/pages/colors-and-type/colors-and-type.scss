@@ -2,14 +2,20 @@
 @import '../../blocks/colors/color.scss';
 @import '../../blocks/tags/tag.scss';
 
-/*.colors-and-type {
+.colors-and-type {
 	width: 1440px;
 	height: 900px;
   display: flex;
-	border: 1px solid black;
+  background: #FFFFFF;
+}
+
+/*.colors-and-type__logo-wrapper {
+  display: flex;
+  width: calc(108 / 1440 * 100%);
+  height: calc(108 / 900 * 100%);
 }*/
 
-.template-page__colors-wrapper {
+.colors-and-type__colors-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -19,7 +25,7 @@
   margin-left: calc(41.74 / 1440 * 100%);
 }
 
-.template-page__tags-wrapper {
+.colors-and-type__tags-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
