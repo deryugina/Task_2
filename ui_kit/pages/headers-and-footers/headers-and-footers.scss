@@ -1,9 +1,14 @@
 @import '../../blocks/header/header.scss';
+@import '../../blocks/footer/footer.scss';
+@import '../../blocks/menu/menu.scss';
+@import '../../blocks/button/button.scss';
+@import '../../blocks/dropdown/dropdown.scss';
+@import '../../blocks/text/text.scss';
 
 .headers-and-footers {
   display: flex;
   width: 1440px;
-  height: 900px;
+  height: 1350px;
   background: #E5E5E5;
 }
 
@@ -11,12 +16,19 @@
   position: absolute;
   width: 1440px;
   height: 70px;
-  margin-top: 150px;
+  margin-top: 140px;
 }
 
 .headers-and-footers__header-defined {
   position: absolute;
   width: 1440px;
   height: 70px;
-  margin-top: 260px;
+  margin-top: 250px;
+}
+
+.headers-and-footers__footer-wrapper {
+  position: absolute;
+  width: 1440px;
+  height: 443px;
+  margin-top: 360px;
 }

@@ -5,29 +5,80 @@ block vars
 
 block content
   include ../../blocks/header/header.pug
-  - var userStatus = "undefined";
+  include ../../blocks/footer/footer.pug
+  - var userStatus = "undefined"
   - var userName = "Cosmin Negoita"
+  - var textCopyright = "Copyright 2018 Toxin UI Kit. All rights reserved."
+  - var menuType
   -
     var itemsUndefined = [
-      { "itemName": 'Home', "itemStyle": 'bold'},
-      { "itemName": 'About Us'},
-      { "dropdown": 'true', "itemMargin": 'other-margin'},
-      { "itemName": 'Careers'},
-      { "itemName": 'News'},
+      { "itemName": 'Home', "linkStyle": 'bold', "itemMargin": 'margin-30'},
+      { "itemName": 'About Us', "itemMargin": 'margin-30'},
+      { "itemName": 'Services', "itemMargin": 'margin-20', "dropdown": 'true'},
+      { "itemName": 'Careers', "itemMargin": 'margin-30'},
+      { "itemName": 'News', "itemMargin": 'margin-30'},
       { "itemName": 'Documentation', "itemMargin": 'no-margin'}
     ]
   -
     var itemsDefined = [
-      { "itemName": 'Home', "itemMargin": 'margin-28', "itemStyle": 'bold'},
+      { "itemName": 'Home', "itemMargin": 'margin-28', "linkStyle": 'bold'},
       { "itemName": 'About Us', "itemMargin": 'margin-28'},
-      { "dropdown": 'true', "itemMargin": 'other-margin'},
+      { "itemName": 'Services', "itemMargin": 'margin-20', "dropdown": 'true'},
       { "itemName": 'Careers', "itemMargin": 'margin-29'},
       { "itemName": 'News', "itemMargin": 'margin-29'},
       { "itemName": 'Documentation', "itemMargin": 'no-margin'}
     ]
+  -
+    var menuNavigation = [
+      {"itemName": 'Navigation', "itemMargin": 'margin-21', "linkStyle": 'menu-title'},
+      {"itemName": 'About Us'},
+      {"itemName": 'News'},
+      {"itemName": 'Support'},
+      {"itemName": 'Products'}
+    ]
+  -
+    var menuAboutUs = [
+      {"itemName": 'About Us', "itemMargin": 'margin-21', "linkStyle": 'menu-title'},
+      {"itemName": 'Who we are'},
+      {"itemName": 'Our team'},
+      {"itemName": 'Careers'},
+      {"itemName": 'Investors'}
+    ]
+  -
+    var menuSupport = [
+      {"itemName": 'Support', "itemMargin": 'margin-21', "linkStyle": 'menu-title'},
+      {"itemName": 'Documentation'},
+      {"itemName": 'Community'},
+      {"itemName": 'Get in Touch'}
+    ]
+  -
+    var textLorem = {
+      "multiline": 'true',
+      "text": 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cocils.'
+    }
+  -
+    var textCopyright = {
+      "quote": 'true',
+      "text": 'Copyright 2018 Toxin UI Kit. All rights reserved.'
+    }
+  -
+    var textSubscribe = {
+      "textStyle": 'menu-title',
+      "text": 'Subsribe to our newsletter'
+    }
+  -
+    var textSubscribeDescription = {
+      "multiline": 'true',
+      "text": 'Receive our latest news and promotions in your inbox!'
+    }
+  -
+    var textsFooter = [textLorem, textCopyright, textSubscribe, textSubscribeDescription]
 
   div.headers-and-footers__header-undefined
-    +header(itemsUndefined, userStatus = "undefined")
+    +header(itemsUndefined, userStatus = "undefined", menuType="menu-header")
 
   div.headers-and-footers__header-defined
-    +header(itemsDefined, userStatus = "defined", userName)
+    +header(itemsDefined, userStatus = "defined", userName, menuType="menu-header")
+
+  div.headers-and-footers__footer-wrapper
+    +footer(textsFooter, menuNavigation, menuAboutUs, menuSupport, menuType="menu-footer")

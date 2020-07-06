@@ -1,4 +1,4 @@
-mixin header(items, userStatus, userName)
+mixin header(items, userStatus, userName, menuType)
   div.header
     include ../menu/menu.pug
     include ../button/button.pug
@@ -7,13 +7,13 @@ mixin header(items, userStatus, userName)
       include ../toxin/Logo.svg
 
     div.header__menu-wrapper
-      +menu(items)
+      +menu(items, menuType)
 
     if userStatus === "undefined"
       div.header__button-login-wrapper
-        +button({buttonType: 'login', buttonName: 'login'})
+        +button({buttonType: 'login', buttonName: 'login', link: 'true'})
       div.header__button-register-wrapper
-        +button({buttonType: 'register', buttonName: 'register'})
+        +button({buttonType: 'register', buttonName: 'register', link: 'true'})
     else
       div.header__vertical-line-wrapper
         div.vertical-line

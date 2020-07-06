@@ -1,0 +1,9 @@
+mixin text(textBlock)
+  - var textClass = "text"
+
+  if textBlock["multiline"] === 'true'
+    - textClass += " text_multiline"
+    p(class=textClass)= textBlock["text"]
+
+  else if textBlock["quote"] === 'true'
+    small(class=textClass)= textBlock["text"]

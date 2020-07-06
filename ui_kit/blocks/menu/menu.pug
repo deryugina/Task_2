@@ -1,18 +1,39 @@
-mixin menu(items)
+mixin menu(items, menuType)
   include ../dropdown/dropdown.pug
-  - var className = "menu__item"
-  ul.menu
+
+  - var classMenuName = "menu"
+  - var classItemName = "menu__item"
+  - var classLinkName = "menu__link" 
+  - var itemLinkAdress = "#"
+  - var i = 0;
+  
+  if menuType
+    - classMenuName += " menu_menu-type_" + menuType
+
+
+  ul(class=classMenuName)
+
     each item in items
-      if item["itemStyle"]
-        - className += " menu__item_style_" + item["itemStyle"]
+
+      - if (menuType == "menu-footer" && i > 1)
+        - classItemName += " menu__item_margin_margin-footer"
+        
+      if item["itemLinkAdress"]
+        - itemLinkAdress = item["itemLinkAdress"]
 
       if item["itemMargin"]
-        - className += " menu__item_margin_" + item["itemMargin"]
+        - classItemName += " menu__item_margin_" + item["itemMargin"]
+      if item["linkStyle"]
+        - classLinkName += " menu__link_style_" + item["linkStyle"]
 
       if item["dropdown"] === 'true' 
-        li(class=className)
-          +dropdown({dropdownName: 'Services'})
+        - classItemName += " menu__item_style_dropdown"
+        li(class=classItemName)= item["itemName"]
+          +dropdown({})
       else
-        li(class=className)= item["itemName"]
+        li(class=classItemName)
+          a(class=classLinkName, href=itemLinkAdress)= item["itemName"]
 
-      - className = "menu__item"
+      - classItemName = "menu__item"
+      - classLinkName = "menu__link"
+      - i++

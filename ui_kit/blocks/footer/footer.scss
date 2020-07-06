@@ -1,0 +1,49 @@
+@import '../email/email.scss';
+.footer {
+  display: flex;
+  width: 1440px;
+  height: 443px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+}
+
+.footer__toxin-wrapper {
+  margin-top: 100px;
+  margin-left: 140px;
+}
+
+.footer__toxin-wrapper .toxin {
+  width: 115px;
+  height: 46px;
+}
+
+.footer__navigation-menu-wrapper {
+  margin-top: 104px;
+  margin-left: 180px;
+}
+
+.footer__about-us-menu-wrapper {
+  margin-top: 104px;
+  margin-left: 57px;
+}
+
+.footer__support-menu-wrapper {
+  margin-top: 104px;
+  margin-left: 92px;
+}
+
+.footer__text-lorem-wrapper {
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 140px;
+}
+
+.footer__form-email-wrapper {
+  position: absolute;
+  margin-top: 208px;
+  margin-left: 1040px;
+}
+
+.footer__text-copyright-wrapper {
+  position: absolute;
+}

@@ -1,0 +1,30 @@
+mixin footer(textsFooter, menuNavigation, menuAboutUs, menuSupport, menuType)
+  div.footer
+    div.footer__toxin-wrapper
+      include ../toxin/Logo.svg
+    div.footer__text-lorem-wrapper
+      include ../text/text.pug
+      + text(textsFooter[0])
+    div.footer__text-copyright-wrapper
+      include ../text/text.pug
+      + text(textsFooter[1])
+    div.footer__navigation-menu-wrapper
+      include ../menu/menu.pug
+      + menu(menuNavigation, menuType)
+    div.footer__about-us-menu-wrapper
+      include ../menu/menu.pug
+      + menu(menuAboutUs, menuType)
+    div.footer__support-menu-wrapper
+      include ../menu/menu.pug
+      + menu(menuSupport, menuType)
+    div.footer__form-email-wrapper
+      include ../email/email.pug
+      + email({inputPosition: true, iconPosition: true})
+    div.footer__subscribe-text-wrapper
+      include ../text/text.pug
+      + text(textsFooter[2])
+    div.footer__subscribe-description-text-wrapper
+      include ../text/text.pug
+      + text(textsFooter[3])
+
+
