@@ -1,6 +1,9 @@
 mixin text(textBlock)
   - var textClass = "text"
 
+  if textBlock["textStyle"]
+    - textClass += " text_style_" + textBlock["textStyle"]
+
   if textBlock["multiline"] === 'true'
     - textClass += " text_multiline"
     p(class=textClass)= textBlock["text"]
