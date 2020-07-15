@@ -1,30 +1,45 @@
-mixin footer(textsFooter, menuNavigation, menuAboutUs, menuSupport, menuType)
-  div.footer
-    div.footer__toxin-wrapper
-      include ../toxin/Logo.svg
-    div.footer__text-lorem-wrapper
-      include ../text/text.pug
-      + text(textsFooter[0])
-    div.footer__text-copyright-wrapper
-      include ../text/text.pug
-      + text(textsFooter[1])
-    div.footer__navigation-menu-wrapper
-      include ../menu/menu.pug
-      + menu(menuNavigation, menuType)
-    div.footer__about-us-menu-wrapper
-      include ../menu/menu.pug
-      + menu(menuAboutUs, menuType)
-    div.footer__support-menu-wrapper
-      include ../menu/menu.pug
-      + menu(menuSupport, menuType)
-    div.footer__form-email-wrapper
-      include ../email/email.pug
-      + email({inputPosition: true, iconPosition: true})
-    div.footer__subscribe-text-wrapper
-      include ../text/text.pug
-      + text(textsFooter[2])
-    div.footer__subscribe-description-text-wrapper
-      include ../text/text.pug
-      + text(textsFooter[3])
+mixin footer(footerType, textsFooter, menuNavigation, menuAboutUs, menuSupport, menuType)
 
+  include ../copyright-bar/copyright-bar.pug
+    
+  ////- console.log(footerType)
+  //- console.log(menuType)
+  //- console.log(textsFooter)
 
+  if (footerType === "widgets-and-copyright")
+    div.footer-widgets
+      div.footer-widgets__toxin-and-text-wrapper
+        include ../toxin/Logo.svg
+        include ../text/text.pug
+        + text(textsFooter[0])
+
+      div.footer-widgets__navigation-menu-wrapper
+        include ../menu/menu.pug
+        + menu(menuNavigation, menuType)
+
+      div.footer-widgets__about-us-menu-wrapper
+        include ../menu/menu.pug
+        + menu(menuAboutUs, menuType)
+
+      div.footer-widgets__support-menu-wrapper
+        include ../menu/menu.pug
+        + menu(menuSupport, menuType)
+
+      div.footer-widgets__email-and-description-wrapper
+        include ../text/text.pug
+        + text(textsFooter[1])
+        include ../text/text.pug
+        + text(textsFooter[2])
+        include ../email/email.pug
+        + email({inputPosition: true, iconPosition: true})
+
+      div.footer-widgets__copyright-bar-wrapper
+        + copyrightBarBlock({copyBarDirection: 'gorizontal'})
+          
+  else if (footerType === "creative")
+    div.footer-creative
+      div.footer-creative__toxin-wrapper
+        include ../toxin/Logo.svg
+
+      div.footer-creative__copyright-bar-wrapper
+        + copyrightBarBlock({copyBarDirection: 'vertical'})

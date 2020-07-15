@@ -1,12 +1,12 @@
 mixin text(textBlock)
   - var textClass = "text"
 
-  if textBlock["textStyle"]
-    - textClass += " text_style_" + textBlock["textStyle"]
+  if textBlock["textMargin"]
+    - textClass += " text_margin_" + textBlock["textMargin"]
 
-  if textBlock["multiline"] === 'true'
-    - textClass += " text_multiline"
+  if textBlock["textStyle"] || textBlock["multiline"] === 'true'
+    - textClass += " text_style_" + textBlock["textStyle"]
     p(class=textClass)= textBlock["text"]
 
-  else if textBlock["quote"] === 'true'
+  if textBlock["quote"] === 'true'
     small(class=textClass)= textBlock["text"]

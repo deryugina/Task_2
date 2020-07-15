@@ -8,8 +8,9 @@ block content
   include ../../blocks/footer/footer.pug
   - var userStatus = "undefined"
   - var userName = "Cosmin Negoita"
-  - var textCopyright = "Copyright 2018 Toxin UI Kit. All rights reserved."
   - var menuType
+  - var copyrightBar
+  - var footerType
   -
     var itemsUndefined = [
       { "itemName": 'Home', "linkStyle": 'bold', "itemMargin": 'margin-30'},
@@ -53,13 +54,9 @@ block content
     ]
   -
     var textLorem = {
-      "multiline": 'true',
+      "textMargin": '20',
+      "textStyle": 'multiline',
       "text": 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cocils.'
-    }
-  -
-    var textCopyright = {
-      "quote": 'true',
-      "text": 'Copyright 2018 Toxin UI Kit. All rights reserved.'
     }
   -
     var textSubscribe = {
@@ -68,17 +65,21 @@ block content
     }
   -
     var textSubscribeDescription = {
-      "multiline": 'true',
+      "textStyle": 'multiline',
       "text": 'Receive our latest news and promotions in your inbox!'
     }
-  -
-    var textsFooter = [textLorem, textCopyright, textSubscribe, textSubscribeDescription]
+
+  - var textsFooter = [textLorem, textSubscribe, textSubscribeDescription]
 
   div.headers-and-footers__header-undefined
-    +header(itemsUndefined, userStatus = "undefined", menuType="menu-header")
+    +header(itemsUndefined, "undefined", "menu-header")
 
   div.headers-and-footers__header-defined
-    +header(itemsDefined, userStatus = "defined", userName, menuType="menu-header")
+    +header(itemsDefined, "defined", userName, "menu-header")
 
-  div.headers-and-footers__footer-wrapper
-    +footer(textsFooter, menuNavigation, menuAboutUs, menuSupport, menuType="menu-footer")
+  div.headers-and-footers__footer-widgets-copyright-bar-wrapper
+    +footer("widgets-and-copyright", textsFooter, menuNavigation, menuAboutUs, menuSupport, "menu-footer")
+
+
+  div.headers-and-footers__footer-creative-wrapper
+    +footer("creative")
