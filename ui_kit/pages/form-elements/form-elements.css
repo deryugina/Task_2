@@ -1,0 +1,75 @@
+.form-elements {
+  width: 1440px;
+  height: 1853px;
+  background: #FFFFFF; }
+
+.form-elements__text-fields-wrapper {
+  height: 322px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: calc(141 / 1440 * 100%); }
+
+.form-elements__date-dropdowns-wrapper {
+  height: 274px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: calc(143 / 1440 * 100%);
+  margin-left: calc(141 / 1440 * 100%); }
+
+.form-elements__checkbox-buttons-toggle-wrapper {
+  height: 564px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: calc(143 / 1440 * 100%);
+  margin-left: calc(126 / 1440 * 100%); }
+
+.form-elements__slider-buttons-pagination-wrapper {
+  height: 503px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: calc(143 / 1440 * 100%);
+  margin-left: calc(132 / 1440 * 100%); }
+
+.form-elements__guests-dropdown-wrapper {
+  width: 712px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: calc(169 / 1440 * 100%);
+  margin-left: calc(181 / 1440 * 100%); }
+
+.form-elements__lists-block-wrapper {
+  width: 684px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: calc(98 / 1440 * 100%);
+  margin-left: calc(181 / 1440 * 100%); }
+
+.form-elements__furniture-dropdown-wrapper {
+  height: 266px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: calc(100 / 1440 * 100%);
+  margin-left: calc(140 / 1440 * 100%); }
+
+.form-elements__expandable-checkbox-list-wrapper {
+  height: 281px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: calc(40 / 1440 * 100%);
+  margin-left: calc(140 / 1440 * 100%); }
+
+.form-elements__advantages-list-wrapper {
+  width: 291px;
+  margin-left: 140px; }
+
+.form-elements__comment-block-wrapper {
+  width: 711px; }
