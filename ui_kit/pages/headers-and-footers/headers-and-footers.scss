@@ -5,6 +5,8 @@
 @import '../../blocks/dropdown/dropdown.scss';
 @import '../../blocks/text/text.scss';
 
+//.logo-wrapper { @include logo-wrapper(1350px); }
+
 .headers-and-footers {
   display: flex;
   width: 1440px;
@@ -13,6 +15,7 @@
   //flex-direction: column;
   //justify-content: space-between;
   background: #E5E5E5;
+  margin-top: 50px;
 }
 
 .headers-and-footers__header-undefined {
