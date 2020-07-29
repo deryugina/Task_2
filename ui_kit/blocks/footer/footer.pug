@@ -30,8 +30,12 @@ mixin footer(footerType, textsFooter, menuNavigation, menuAboutUs, menuSupport, 
         + text(textsFooter[1])
         include ../text/text.pug
         + text(textsFooter[2])
-        include ../email/email.pug
-        + email({inputPosition: true, iconPosition: true})
+        //include ../subscription-text-field/subscription-text-field.pug
+        //+ subscription-text-field({placeholderText: 'Your email address'})
+        include ../text-field/text-field.pug
+        //+ text-field({inputPosition: true, iconPosition: true})
+        //+ text-field({textFieldType: 'footer', placeholderText: 'Your email address'})
+        + text-field({placeholderText: 'Your email address', subscription: 'true', inputType: 'email'})
 
       div.footer-widgets__copyright-bar-wrapper
         + copyrightBarBlock({copyBarDirection: 'gorizontal'})
