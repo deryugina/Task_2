@@ -1,0 +1,49 @@
+@import '../templates/template.scss';
+@import '../fonts/fonts.scss';
+@import '../pages/colors-and-type/colors-and-type.scss';
+@import '../pages/headers-and-footers/headers-and-footers.scss';
+@import '../pages/form-elements/form-elements.scss';
+
+/*.logo-wrapper {
+  display: flex;
+  width: calc(108 / 1440 * 100%);
+  height: calc(108 / 900 * 100%);
+}
+
+.colors-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: calc(269.26 / 1440 * 100%);
+  height: calc(610 / 900 * 100%);
+  margin-top: calc(145 / 1440 * 100%);
+  margin-left: calc(41.74 / 1440 * 100%);
+}*/
+
+/*.tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: calc(403 / 1440 * 100%);
+  height: calc(321 / 900 * 100%);
+  //width: 403px;
+  //height: 321px;
+  //min/max-width. INPUT IT
+  margin-top: calc(145 / 1440 * 100%);
+  margin-left: calc(437 / 1440 * 100%);
+}
+
+@import '../blocks/logo/logo.scss';
+@import '../blocks/colors/color.scss';
+@import '../blocks/tags/tag.scss';
+@import '../blocks/dropdown-2/dropdown-2.scss';
+@import '../blocks/email/email.scss';*/
+
+//the second way to center logo-block:
+//
+//.logo-wrapper {
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//}
+

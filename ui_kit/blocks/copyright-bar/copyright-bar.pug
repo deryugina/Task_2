@@ -1,0 +1,12 @@
+mixin copyrightBarBlock (options)
+  - var copyBarClass = "copyright-bar"
+
+  if options.copyBarDirection
+    - copyBarClass += " copyright-bar_direction_" + options.copyBarDirection
+
+  div(class=copyBarClass)
+    small.copyright-bar__copyright-text Copyright &copy; 2018 UI Kit. All rights reserved. 
+    div.copyright-bar__icons-block
+      include ./twitter.svg
+      include ./facebook.svg
+      include ./instagram.svg

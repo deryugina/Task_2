@@ -1,0 +1,39 @@
+mixin menu(items, menuType)
+  include ../dropdown/dropdown.pug
+
+  - var classMenuName = "menu"
+  - var classItemName = "menu__item"
+  - var classLinkName = "menu__link" 
+  - var itemLinkAdress = "#"
+  - var i = 0;
+  
+  if menuType
+    - classMenuName += " menu_menu-type_" + menuType
+
+
+  ul(class=classMenuName)
+
+    each item in items
+
+      - if (menuType == "menu-footer" && i > 1)
+        - classItemName += " menu__item_margin_margin-footer"
+        
+      if item["itemLinkAdress"]
+        - itemLinkAdress = item["itemLinkAdress"]
+
+      if item["itemMargin"]
+        - classItemName += " menu__item_margin_" + item["itemMargin"]
+      if item["linkStyle"]
+        - classLinkName += " menu__link_style_" + item["linkStyle"]
+
+      if item["dropdown"] === 'true' 
+        - classItemName += " menu__item_style_dropdown"
+        li(class=classItemName)= item["itemName"]
+          +dropdown({})
+      else
+        li(class=classItemName)
+          a(class=classLinkName, href=itemLinkAdress)= item["itemName"]
+
+      - classItemName = "menu__item"
+      - classLinkName = "menu__link"
+      - i++

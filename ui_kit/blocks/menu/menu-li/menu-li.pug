@@ -1,0 +1,20 @@
+mixin menu-li(options)
+
+  - var menuItemClass = "menu__item"
+
+  if options.menuItemWidth
+    - menuItemClass += " menu__item_width_" + options.menuItemWidth
+
+  - var menuLinkAddress = "#"
+
+  if options.menuLinkAddress
+  - menuLinkAddress = options.menuLinkAddress
+
+  if options.menuNoLink
+    li(class=menuItemClass)= options.menuItemName
+      if options.menuDropdown == 'true'
+        include ../../dropdown/dropdown.pug
+        +dropdown({dropdownName: 'Services'})
+  else
+    li(class=menuItemClass)
+      a(class="menu__link" href=menuLinkAddress)= options.menuItemName

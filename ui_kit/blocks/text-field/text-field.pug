@@ -1,0 +1,26 @@
+mixin text-field(options)
+
+  - var textFieldClass = "text-field"
+  - var textFieldInputClass = "text-field__input"
+
+  if options.subscription
+    - textFieldClass += " text-field_subscription"
+
+  //if options.hover
+    - textFieldInputClass += " text-field__input_hover"
+
+  - textFieldInputClass += options.hover ? " text-field__input_hover" : ""
+
+  div(class=textFieldClass)
+
+    if options.labelText
+      label(for=options.idName)= options.labelText
+
+    input(class=textFieldInputClass type=options.inputType id=options.idName placeholder=options.placeholderText)
+
+    if options.subscription
+      div.text-field__icon-button-wrapper
+        button(class="text-field__icon-button")= '\u{1f862}'
+
+    if !options.subscription
+      script(defer src="../blocks/text-field/text-field.js")

@@ -1,0 +1,36 @@
+@import '../../templates/template.scss';
+@import '../../blocks/colors/color.scss';
+@import '../../blocks/tags/tag.scss';
+
+.colors-and-type {
+	width: 1440px;
+	height: 900px;
+  display: flex;
+  background: #FFFFFF;
+}
+
+/*.colors-and-type__logo-wrapper {
+  display: flex;
+  width: calc(108 / 1440 * 100%);
+  height: calc(108 / 900 * 100%);
+}*/
+
+.colors-and-type__colors-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: calc(269.26 / 1440 * 100%);
+  height: calc(610 / 900 * 100%);
+  margin-top: calc(145 / 1440 * 100%);
+  margin-left: calc(41.74 / 1440 * 100%);
+}
+
+.colors-and-type__tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: calc(403 / 1440 * 100%);
+  height: calc(321 / 1440 * 100%);
+  margin-top: calc(145 / 1440 * 100%);
+  margin-left: calc(437 / 1440 * 100%);
+}

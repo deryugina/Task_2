@@ -1,0 +1,8 @@
+div.tags
+  include ./tag/tag.pug
+
+  +tag({ tagName: 'h1', tagDescription : 'This one is the sub-section or widget title', size: 'size-h1', font: 'quicksand'})
+  +tag({ tagName: 'h2', tagDescription: 'Next one is the item title inside widgets', size: 'size-h2', font: 'quicksand'})
+  +tag({ tagName: 'h3', tagDescription: 'this is a label or cta text', size: 'size-h3', weight: 'bold'})
+  +tag({ tagName: 'Body', tagDescription: 'This is the body text which is used for'
+  + 'most of the design, like paragraphs, lists, etc.', size: 'size-body', opacity: 'high', transform: 'none'})

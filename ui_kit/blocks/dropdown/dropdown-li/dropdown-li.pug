@@ -1,0 +1,16 @@
+mixin dropdown-li(options)
+  - var dropdownItemClass = "dropdown__item"
+  - var dropdownLinkClass = "dropdown__link"
+  - var dropdownLinkAddress = "#"
+
+  if options.dropdownLinkAddress
+    - dropdownLinkAddress = options.dropdownLinkAddress
+
+  if options.dropdownLinkStyle
+    - dropdownLinkStyle += " dropdown__link_style_" + options.dropdownLinkStyle
+
+  if options.dropdownItemStyle
+    - dropdownItemClass += " dropdown__item_style_" + options.dropdownItemStyle
+    
+  li(class=dropdownItemClass)
+    a(class=dropdownLinkClass, href=dropdownLinkAddress)= options.dropdownLinkName

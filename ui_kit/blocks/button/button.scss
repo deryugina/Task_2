@@ -1,0 +1,59 @@
+.form-button__button,
+.button-link {
+  //height: 34px;
+  height: calc(34 / 70 * 100%);
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 15px;
+  text-transform: uppercase;
+  border-radius: 22px;
+  max-height: 32px;
+}
+
+.button-link {
+  text-decoration: none;
+}
+
+.button-link_button-type_login {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8px 19px;
+  color: #BC9CFF; 
+  background: #FFFFFF; 
+  border: none;
+}
+
+.button-link_button-type_register {
+  color: #FFFFFF; 
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  padding: 9px 19px;
+  border: none;
+}
+
+//CONVERT ALL IN PERCENT
+.form-button__button-border-gradient {
+  padding: 2px;
+  //max-width: 79px;
+  max-width: 79px;
+  height: calc(34 / 70 * 100%);
+  border-radius: 22px;
+  text-align: center;
+  background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.form-button__button_button-type_login {
+  vertical-align: middle;
+  padding: 8px 19px;
+  color: #BC9CFF;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.form-button__button_button-type_register {
+  padding: 9px 19px;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border: none;
+}

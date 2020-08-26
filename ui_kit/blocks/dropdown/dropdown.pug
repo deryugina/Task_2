@@ -1,0 +1,13 @@
+mixin dropdown(options)
+  - var dropdownClass = "dropdown"
+
+  if options.dropdownStyle
+    - dropdownClass += " dropdown_style_" + options.dropdownStyle
+  span.dropdown-arrow
+    include ./expand_more.svg
+
+  ul(class=dropdownClass)
+    include ./dropdown-li/dropdown-li.pug
+    +dropdown-li({dropdownLinkName: 'Service-1'})
+    +dropdown-li({dropdownLinkName: 'Service-2'})
+    +dropdown-li({dropdownLinkName: 'Service-3'})

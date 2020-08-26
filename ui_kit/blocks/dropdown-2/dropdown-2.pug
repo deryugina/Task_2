@@ -1,0 +1,11 @@
+mixin dropdown(options)
+  div.dropdown-look
+    select.dropdown= options.dropdownName
+      include ./dropdown-2-option/dropdown-option.pug
+
+      +dropdown-item('Service-1')
+      +dropdown-item('Service-2')
+      +dropdown-item('Service-3')
+
+    div.dropdown-arrow
+      include ./expand_more.svg

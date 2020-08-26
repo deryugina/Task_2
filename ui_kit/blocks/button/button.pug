@@ -1,0 +1,26 @@
+mixin button(options)
+  - var buttonClass = "form-button__button"
+  - var buttonLinkClass = "button-link"
+  - var buttonLinkAddress = "#"
+
+  if options.buttonLinkStyle
+    - buttonLinkClass += " button-link_style_" + options.buttonLinkStyle
+
+  if options.buttonLinkAddress
+
+  if options.link === 'true'
+    - buttonLinkClass += " button-link_button-type_" + options.buttonType
+    if options.buttonType == 'login'
+      div.form-button__button-border-gradient
+        a(class=buttonLinkClass, href=buttonLinkAddress)=options.buttonName
+    else
+      a(class=buttonLinkClass, href=buttonLinkAddress)=options.buttonName
+  else
+    - buttonClass += " form-button__button_button-type_" + options.buttonType
+    if options.buttonType == 'login'
+      form(class="form-button" name="login-button" action="url")
+      div.form-button__button-border-gradient
+        button(class=buttonClass)=options.buttonName
+    else
+      form(class="form-button" name="register-button" action="url")
+        button(class=buttonClass)=options.buttonName

@@ -1,0 +1,31 @@
+extends ../../templates/template.pug
+
+block vars
+  - var pageClassName = "form-elements" 
+
+block content
+
+  div.form-elements__text-fields-wrapper
+    include ../../blocks/text-field/text-field.pug
+
+    + text-field({inputType: 'email', labelText: 'text field', placeholderText: 'Email', idName: 'email-text-field'})
+
+    + text-field({inputType: 'email', labelText: 'text field', placeholderText: 'This is pretty awesome', idName: 'hover-text-field', hover: 'true'})
+
+  div.form-elements__date-dropdowns-wrapper
+
+  div.form-elements__checkbox-buttons-toggle-wrapper
+
+  div.form-elements__slider-buttons-pugination-wrapper
+
+  div.form-elements__guests-dropdown-wrapper
+
+  div.form-elements__bullet-list-wrapper
+
+  div.form-elements__furniture-dropdown-wrapper
+
+  div.form-elements__expandable-checkbox-list-wrapper
+
+  div.form-elements__advantages-list-wrapper
+
+  div.form-elements__comment-block-wrapper
