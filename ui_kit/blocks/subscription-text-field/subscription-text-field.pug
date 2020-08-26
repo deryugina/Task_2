@@ -1,0 +1,16 @@
+mixin subscription-text-field(options)
+
+  - var subTextFieldClass = "subscription-text-field"
+  - var subTextFieldInputClass += subTextFieldClass + "__input"
+  - var subTextFieldBtnClass += subTextFieldClass + "__icon-button"
+  //- var subTextFieldLabelClass += subTextFieldClass + "__label"
+
+  div(class=subTextFieldClass)
+
+    if options.labelText
+      label(for=options.idName)= options.labelText
+
+    input(class=subTextFieldInputClass type="email" placeholder=options.placeholderText)
+
+    div(class="subscription-text-field__icon-button-wrapper")
+      button(class=subTextFieldBtnClass)= '\u{1f862}'

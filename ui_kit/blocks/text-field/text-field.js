@@ -1,20 +1,34 @@
-var textField = document.querySelector('.text-field');
-var input = document.querySelector('.text-field__input');
+/*var count = 0;
+//var input = this;
+var input = document.querySelectorAll('.text-field__input');
+var textFieldPlaceholder = "some text";
 
-console.log("Code is working");
+for (count = 0; count < input.length; count++) {
+  input[count].addEventListener("mouseover", function() {
+    textFieldPlaceholder = this.getAttribute("placeholder");
+    this.style.border = "1px solid rgba(31, 32, 65, 0.5)";
+    this.setAttribute("placeholder", "This is pretty awesome");
+  });
 
-textField.addEventListener("mouseover", function(){
-  console.log("All is working!");
-  input.border = "1px solid rgba(31, 32, 65, 0.5)";
-  input.setAttribute("placeholder", "This is pretty awesome");
-  input.placeholder.color = "#1F2041";
-  input.placeholder.opacity = "0.75";
+  input[count].addEventListener("mouseout", function() {
+    this.style.border = "1px solid rgba(31, 32, 65, 0.25)";
+    //var.setAttribute("placeholder", textFieldPlaceholder);
+    this.setAttribute("placeholder", textFieldPlaceholder);
+  });
+};*/
+
+var input = document.getElementById("email-text-field");
+//var input = document.querySelector("#email-text-field");
+var textFieldPlaceholder = input.getAttribute("placeholder");
+
+input.addEventListener("mouseover", function() {
+  //textFieldPlaceholder = this.getAttribute("placeholder");
+  this.style.border = "1px solid rgba(31, 32, 65, 0.5)";
+  this.setAttribute("placeholder", "This is pretty awesome");
 });
 
-/*textField.addEventListener("mouseout", function(){
-  console.log("All is working!");
-  textField.border = "1px solid rgba(31, 32, 65, 0.25)";
-  input.setAttribute("placeholder", "Email");
-  input.placeholder.color = "#1F2041";
-  input.placeholder.opacity = "0.25";
-});*/
+input.addEventListener("mouseout", function() {
+  this.style.border = "1px solid rgba(31, 32, 65, 0.25)";
+  //this.setAttribute("placeholder", textFieldPlaceholder);
+  this.setAttribute("placeholder", textFieldPlaceholder);
+});

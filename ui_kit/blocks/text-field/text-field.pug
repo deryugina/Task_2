@@ -6,6 +6,11 @@ mixin text-field(options)
   if options.subscription
     - textFieldClass += " text-field_subscription"
 
+  //if options.hover
+    - textFieldInputClass += " text-field__input_hover"
+
+  - textFieldInputClass += options.hover ? " text-field__input_hover" : ""
+
   div(class=textFieldClass)
 
     if options.labelText
@@ -17,35 +22,5 @@ mixin text-field(options)
       div.text-field__icon-button-wrapper
         button(class="text-field__icon-button")= '\u{1f862}'
 
-
-    script(src="../blocks/text-field/text-field.js")
-
-
-//- var formClassName = "text-field"
-  - var inputClassName = "text-field__email-input"
-
-  if options.hover === 'true'
-    - formClassName += " text-field_hover"
-    - inputClassName += " text-field__email-input_hover"
-
-  if options.textFieldType
-
-    - inputClassName += " text-field__input_type_" + options.textFieldType
-
-    - formClassName += " text-field_type_" + options.textFieldType
-
-    //div.text-field-block
-
-    if options.textInscription
-      //div.text-field-block__inscription-wrapper
-      span(class="text-field__inscription")=options.textInscription
-
-    form(class=formClassName name="email" action="url")
-      input(class=inputClassName type="email" placeholder=options.placeholderText)
-
-      if options.textFieldType !== 'ordinary'
-        div.text-field__icon-button-wrapper
-          button(class="text-field__icon-button")= '\u{1f862}'
-
-    //script(src='text-field.js')
-    script(src="../blocks/text-field/text-field.js")
+    if !options.subscription
+      script(defer src="../blocks/text-field/text-field.js")
