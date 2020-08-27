@@ -3,12 +3,12 @@
     по адаптивной вёрстке сайта по макету в рамках обучающей прогаммы.  
   
     Используемые технологии: 
-    :black-small-square: HTML 
-    :black-small-square: CSS
-    :black-small-square: PUG/JADE
-    :black-small-square: SCSS
-    :black-small-square: Parcel
-    :black-small-square: Node.js(для компиляции PUG в HTML)  
+    :black_small_square: HTML 
+    :black_small_square: CSS
+    :black_small_square: PUG/JADE
+    :black_small_square: SCSS
+    :black_small_square: Parcel
+    :black_small_square: Node.js(для компиляции PUG в HTML)  
   
     Задание находится в процессе выполнения. Вся вёрстка написана мной с нуля, 
     посмотреть прогресс на данный момент можно по ссылке:
